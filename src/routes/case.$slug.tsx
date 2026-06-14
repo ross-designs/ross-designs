@@ -217,7 +217,7 @@ for (const slug of order) {
 }
 
 export const Route = createFileRoute("/case/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): CaseStudy => {
     const study = studies[params.slug];
     if (!study) throw notFound();
     return study;
