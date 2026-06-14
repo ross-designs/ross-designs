@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import heroBg from "@/assets/hero-bg.jpg";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import avatar from "@/assets/avatar.jpg";
 import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
@@ -43,7 +43,7 @@ const cases = [
     blurb:
       "Built Funnel's customer personas from qualitative and quantitative research, giving three product lines a shared language for who they were building for.",
     outcome: "Adopted by Product, Marketing, and CS as the canonical customer model.",
-    href: "https://ross-designs.github.io/ross-designs-github.io/case1.html",
+    href: "/case/personas",
   },
   {
     n: "02",
@@ -53,7 +53,7 @@ const cases = [
     blurb:
       "Users had to delete and rebuild when their setup changed. I redesigned the core flow so configurations could evolve in place, without losing work.",
     outcome: "Eliminated a top-3 driver of support tickets and frustration.",
-    href: "https://ross-designs.github.io/ross-designs-github.io/case2.html",
+    href: "/case/flexibility",
   },
   {
     n: "03",
@@ -63,7 +63,7 @@ const cases = [
     blurb:
       "A single surface served as setup flow, overview, and workspace. I restructured the IA so each job got its own focused space — without splintering the experience.",
     outcome: "Boosted engagement on core feature; reduced time-to-first-value.",
-    href: "https://ross-designs.github.io/ross-designs-github.io/case3.html",
+    href: "/case/ia",
   },
   {
     n: "04",
@@ -73,7 +73,7 @@ const cases = [
     blurb:
       "CS was buried in simple, repetitive requests. I designed a self-serve solution that handled the long tail, freeing the team for high-impact work.",
     outcome: "Contributed to a 45% reduction in inbound support load.",
-    href: "https://ross-designs.github.io/ross-designs-github.io/case4.html",
+    href: "/case/automation",
   },
 ];
 
@@ -130,11 +130,27 @@ function Hero() {
       <div
         className="absolute inset-0 -z-10 opacity-40"
         style={{
-          backgroundImage: `radial-gradient(ellipse at top right, oklch(0.78 0.16 55 / 0.35), transparent 60%), radial-gradient(ellipse at bottom left, oklch(0.68 0.19 40 / 0.2), transparent 55%)`,
+          backgroundImage: `radial-gradient(ellipse at top right, oklch(0.7 0.18 250 / 0.25), transparent 60%), radial-gradient(ellipse at bottom left, oklch(0.85 0.06 240 / 0.5), transparent 55%)`,
         }}
       />
       <div className="mx-auto max-w-7xl px-6">
         <div className="reveal max-w-5xl">
+          <div className="mb-10 flex items-center gap-5">
+            <div className="relative">
+              <img
+                src={avatar}
+                alt="Ross Barrett"
+                width={88}
+                height={88}
+                className="h-20 w-20 rounded-full object-cover ring-4 ring-background shadow-[0_8px_30px_-10px_oklch(0.5_0.18_255_/_0.4)]"
+              />
+              <span className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-full bg-emerald-500 ring-4 ring-background" />
+            </div>
+            <div>
+              <div className="text-sm font-medium text-foreground">Ross Barrett</div>
+              <div className="text-sm text-muted-foreground">Available for senior design roles · Q1 2026</div>
+            </div>
+          </div>
           <div className="mb-8 flex items-center gap-3 text-sm font-mono text-muted-foreground">
             <span className="h-px w-12 bg-primary/60" />
             Stockholm · Product Designer
@@ -213,11 +229,9 @@ function Work() {
 
       <div className="space-y-24 md:space-y-32">
         {cases.map((c, i) => (
-          <a
+          <Link
             key={c.n}
-            href={c.href}
-            target="_blank"
-            rel="noopener noreferrer"
+            to={c.href}
             className={`group grid items-center gap-10 md:grid-cols-12 ${
               i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
             }`}
@@ -255,7 +269,7 @@ function Work() {
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
@@ -408,5 +422,3 @@ function Footer() {
   );
 }
 
-// hero bg image is currently unused as decoration but imported so the build can later place it
-void heroBg;
