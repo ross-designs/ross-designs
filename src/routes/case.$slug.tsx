@@ -250,7 +250,7 @@ export const Route = createFileRoute("/case/$slug")({
 });
 
 function CaseStudyPage() {
-  const study = Route.useLoaderData();
+  const study = Route.useLoaderData() as CaseStudy;
   return (
     <main className="min-h-screen bg-background text-foreground antialiased">
       <CaseNav />
