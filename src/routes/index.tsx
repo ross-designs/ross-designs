@@ -203,7 +203,7 @@ function Work() {
           </h2>
         </div>
         <div className="hidden text-right text-sm text-muted-foreground md:block">
-          Four studies from<br />Funnel AB · 2021–2025
+          Four studies from<br />Funnel AB · 2021–2026
         </div>
       </div>
 
