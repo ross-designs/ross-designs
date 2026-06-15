@@ -103,7 +103,7 @@ function Nav() {
     <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-2xl tracking-tight">
-          Ross<span className="text-primary">.</span>
+          Ross Barrett<span className="text-primary">.</span>
         </a>
         <nav className="hidden gap-8 text-sm text-muted-foreground md:flex">
           <a href="#work" className="hover:text-foreground transition-colors">Work</a>
@@ -115,7 +115,7 @@ function Nav() {
           href="mailto:r_barrett1@hotmail.com"
           className="hidden md:inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all"
         >
-          Available for work
+          Email
           <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
         </a>
       </div>
@@ -369,7 +369,7 @@ function Contact() {
             href="mailto:r_barrett1@hotmail.com"
             className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
           >
-            r_barrett1@hotmail.com
+            Email
             <span>→</span>
           </a>
           <a
@@ -382,7 +382,7 @@ function Contact() {
           </a>
         </div>
         <div className="mt-10 font-mono text-sm text-muted-foreground">
-          Stockholm, Sweden · +46 72 257 4131
+          Stockholm, Sweden
         </div>
       </div>
     </section>
@@ -393,9 +393,9 @@ function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground">
-        <div>© {new Date().getFullYear()} Ross Barrett. Designed and built with intent.</div>
+        <div>© {new Date().getFullYear()} Ross Barrett.</div>
         <div className="font-mono text-xs uppercase tracking-widest">
-          Available · Q1 2026
+          {"\n"}
         </div>
       </div>
     </footer>
