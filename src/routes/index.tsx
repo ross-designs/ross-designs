@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import avatar from "@/assets/avatar.jpg";
 import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
