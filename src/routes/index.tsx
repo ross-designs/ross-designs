@@ -134,32 +134,21 @@ function Hero() {
         }}
       />
       <div className="mx-auto max-w-7xl px-6">
-        <div className="reveal max-w-5xl">
-          <div className="mb-10 flex items-center gap-5">
-            <div className="relative">
-              <img
-                src={avatar}
-                alt="Ross Barrett"
-                width={88}
-                height={88}
-                className="h-20 w-20 rounded-full object-cover ring-4 ring-background shadow-[0_8px_30px_-10px_oklch(0.5_0.18_255_/_0.4)]"
-              />
-              <span className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-full bg-emerald-500 ring-4 ring-background" />
-            </div>
-            <div>
-              <div className="text-sm font-medium text-foreground">Ross Barrett</div>
-              <div className="text-sm text-muted-foreground">Available for senior design roles · Q1 2026</div>
-            </div>
-          </div>
-          <div className="mb-8 flex items-center gap-3 text-sm font-mono text-muted-foreground">
-            <span className="h-px w-12 bg-primary/60" />
-            Stockholm · Product Designer
-          </div>
-          <h1 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl lg:text-[9rem]">
-            Designing SaaS<br />
-            products that <em className="text-primary not-italic">earn</em><br />
-            their numbers.
-          </h1>
+          <div className="reveal max-w-5xl">
+            <h1 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl lg:text-[9rem]">
+              Designing SaaS<br />
+              products that{" "}
+              <span className="inline-flex items-baseline gap-2 md:gap-4">
+                <em className="text-primary not-italic">earn</em>
+                <img
+                  src={avatar}
+                  alt="Ross Barrett"
+                  className="h-10 w-10 rounded-full object-cover ring-2 ring-background shadow-[0_4px_20px_-5px_rgba(0,0,0,0.15)] md:h-16 md:w-16 lg:h-24 lg:w-24"
+                />
+              </span>
+              <br />
+              their numbers.
+            </h1>
           <p className="mt-10 max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
             I'm <span className="text-foreground">Ross Barrett</span> — a product designer with a decade
             inside SaaS, shaping workflows, research, and IA at Funnel. I ship work that moves the
