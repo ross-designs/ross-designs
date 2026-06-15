@@ -32,7 +32,6 @@ const studies: Record<string, CaseStudy> = {
     meta: [
       { label: "Role", value: "Lead designer & researcher" },
       { label: "Team", value: "Marketing, Sales, Product, CS" },
-      { label: "Year", value: "2022" },
     ],
     sections: [
       {
@@ -79,7 +78,6 @@ const studies: Record<string, CaseStudy> = {
     meta: [
       { label: "Role", value: "Product designer" },
       { label: "Team", value: "Product, Engineering, Support" },
-      { label: "Year", value: "2023" },
     ],
     sections: [
       {
@@ -126,7 +124,6 @@ const studies: Record<string, CaseStudy> = {
     meta: [
       { label: "Role", value: "Lead designer" },
       { label: "Team", value: "Cross-team feature" },
-      { label: "Year", value: "2024" },
     ],
     sections: [
       {
@@ -173,7 +170,6 @@ const studies: Record<string, CaseStudy> = {
     meta: [
       { label: "Role", value: "Product designer" },
       { label: "Team", value: "Integration Engineering, Product" },
-      { label: "Year", value: "2024" },
     ],
     sections: [
       {
