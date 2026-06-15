@@ -378,7 +378,7 @@ function CaseNav() {
     <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="font-display text-2xl tracking-tight">
-          Ross<span className="text-primary">.</span>
+          Ross Barrett<span className="text-primary">.</span>
         </Link>
         <Link
           to="/"
