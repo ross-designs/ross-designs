@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import avatar from "@/assets/avatar.jpg";
 import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
@@ -137,15 +136,7 @@ function Hero() {
           <div className="reveal max-w-5xl">
             <h1 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl lg:text-[9rem]">
               Designing SaaS<br />
-              products that{" "}
-              <span className="inline-flex items-baseline gap-2 md:gap-4">
-                <em className="text-primary not-italic">earn</em>
-                <img
-                  src={avatar}
-                  alt="Ross Barrett"
-                  className="h-10 w-10 rounded-full object-cover ring-2 ring-background shadow-[0_4px_20px_-5px_rgba(0,0,0,0.15)] md:h-16 md:w-16 lg:h-24 lg:w-24"
-                />
-              </span>
+              products that <em className="text-primary not-italic">earn</em>
               <br />
               their numbers.
             </h1>
