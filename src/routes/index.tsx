@@ -370,7 +370,7 @@ function Contact() {
             <span>→</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/rossbarrett/"
+            href="https://www.linkedin.com/in/ross-designs/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-border px-8 py-4 text-base font-medium hover:bg-card transition-colors"
