@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Garet";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/__l5e/assets-v1/6476d24f-7177-49eb-a921-65ff68cd90c7/Garet-Bold.otf") format("opentype");
+}
+
 /*
  * Ross Barrett — editorial portfolio design system.
  * Warm ink + amber palette, Instrument Serif display, Inter body.
@@ -50,7 +58,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: "Garet", "Instrument Serif", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
@@ -144,7 +152,7 @@
 
   .font-display {
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.02em;
   }
 
