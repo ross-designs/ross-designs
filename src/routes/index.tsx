@@ -142,7 +142,7 @@ function Hero() {
             </h1>
           <p className="mt-10 max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
             I'm <span className="text-foreground">Ross Barrett</span> — a product designer with a decade
-            inside SaaS, shaping workflows, research, and IA at Funnel. I ship work that moves the
+            inside SaaS, shaping workflows, research, and information architecture at Funnel. I ship work that moves the
             metrics teams actually care about: support load, conversion, retention.
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-4">
@@ -271,11 +271,10 @@ function About() {
         </div>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-7 md:col-start-6">
           <p className="text-foreground text-pretty">
-            Before I was a product designer, I ran customer success, built a marketing
-            function, and managed product roadmaps. That path is the unfair advantage.
+            Before I was a product designer, I was a leader in customer success, built a marketing function, and managed product roadmaps.
           </p>
           <p className="text-pretty">
-            At Funnel I now define design vision across three product lines alongside the CDO,
+            At Funnel, I defined the design vision across three product lines alongside the CDO,
             running continuous discovery and validating with rapid prototyping. I think in
             workflows and outcomes — what the user is actually trying to accomplish, and
             what changes in the business when we get it right.
@@ -288,7 +287,7 @@ function About() {
           <div className="grid grid-cols-2 gap-6 pt-6">
             {[
               "User-centered design",
-              "Workflow & IA",
+              "Workflow & information architecture",
               "Quant & qual research",
               "Usability testing",
               "Traditional & AI prototyping",
@@ -382,7 +381,7 @@ function Contact() {
           </a>
         </div>
         <div className="mt-10 font-mono text-sm text-muted-foreground">
-          Stockholm, Sweden
+          {"\n"}
         </div>
       </div>
     </section>
