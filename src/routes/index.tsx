@@ -134,10 +134,8 @@ function Hero() {
       />
       <div className="mx-auto max-w-7xl px-6">
           <div className="reveal max-w-5xl">
-            <h1 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl lg:text-[9rem]">
-              Designing SaaS<br />
-              products that <em className="text-primary not-italic">earn</em>
-              <br />
+            <h1 className="font-display text-balance text-5xl leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
+              Designing SaaS products that <em className="text-primary not-italic">earn</em><br />
               their numbers.
             </h1>
           <p className="mt-10 max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
