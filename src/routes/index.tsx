@@ -134,7 +134,7 @@ function Hero() {
         }}
       />
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center lg:justify-items-center">
           <div className="reveal max-w-5xl">
             <h1 className="font-display text-balance text-5xl leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
               Designing SaaS products that <em className="text-primary not-italic">earn</em><br />
