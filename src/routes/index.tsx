@@ -161,11 +161,11 @@ function Hero() {
             </a>
           </div>
         </div>
-          <div className="reveal hidden lg:flex lg:justify-center">
+          <div className="reveal hidden lg:block lg:w-96">
             <img
               src={rossProfile.url}
               alt="Ross Barrett"
-              className="h-72 w-72 rounded-full object-cover object-[75%_25%] shadow-xl"
+              className="mx-auto h-72 w-72 rounded-full object-cover object-[75%_25%] shadow-xl"
             />
           </div>
         </div>
