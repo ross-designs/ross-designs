@@ -165,7 +165,7 @@ function Hero() {
             <img
               src={rossProfile.url}
               alt="Ross Barrett"
-              className="h-72 w-72 rounded-full object-cover object-[70%_30%] shadow-xl"
+              className="h-72 w-72 rounded-full object-cover object-[75%_35%] shadow-xl"
             />
           </div>
         </div>
