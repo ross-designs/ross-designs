@@ -3,6 +3,7 @@ import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
+import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -112,11 +113,11 @@ function Nav() {
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </nav>
         <a
-          href="mailto:r_barrett1@hotmail.com"
-          className="hidden md:inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+          href="#contact"
+          className="hidden md:inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground hover:bg-card/80 transition-all shadow-sm"
         >
-          Email
-          <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+          <span className="h-2 w-2 rounded-full bg-green-600" />
+          Open to new roles
         </a>
       </div>
     </header>
@@ -133,6 +134,7 @@ function Hero() {
         }}
       />
       <div className="mx-auto max-w-7xl px-6">
+        <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
             <h1 className="font-display text-balance text-5xl leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
               Designing SaaS products that <em className="text-primary not-italic">earn</em><br />
@@ -157,6 +159,14 @@ function Hero() {
             >
               Get in touch
             </a>
+          </div>
+        </div>
+          <div className="reveal hidden lg:block">
+            <img
+              src={rossProfile.url}
+              alt="Ross Barrett"
+              className="h-72 w-72 rounded-full object-cover shadow-xl"
+            />
           </div>
         </div>
       </div>
