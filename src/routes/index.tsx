@@ -161,7 +161,7 @@ function Hero() {
             </a>
           </div>
         </div>
-          <div className="reveal hidden lg:block">
+          <div className="reveal hidden lg:flex lg:items-center lg:justify-center">
             <img
               src={rossProfile.url}
               alt="Ross Barrett"
