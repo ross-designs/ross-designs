@@ -35,7 +35,7 @@ const studies: Record<string, CaseStudy> = {
     ],
     sections: [
       {
-        heading: "The problem",
+        heading: "The challenge",
         body: "Marketing was rethinking Funnel's positioning and needed a sharper view of existing customer segments — their goals, behaviours and attitudes. At the same time, Sales and CS were rolling out playbooks that lacked the customer attributes to make them land.",
       },
       {
@@ -85,7 +85,7 @@ const studies: Record<string, CaseStudy> = {
         body: "In Funnel, users manually upload data when an automated connection isn't available. To do that, they configure the dataset — fields, types, the shape of the data. That configuration is reused for every future upload.",
       },
       {
-        heading: "The problem",
+        heading: "The challenge",
         body: "Once set, the configuration couldn't be changed. Renaming a field or fixing a type meant deleting everything and starting over — or filing a support ticket so we could patch it from the backend. Painful and slow for the user; expensive for us.",
       },
       {
@@ -127,7 +127,7 @@ const studies: Record<string, CaseStudy> = {
     ],
     sections: [
       {
-        heading: "The problem",
+        heading: "The challenge",
         body: "Funnel's file import feature made users hop between several similar pages to complete a single goal. The same pages morphed depending on the phase, and two pages — owned by different teams — displayed the same things. The whole flow was incredibly complicated.",
       },
       {
@@ -173,7 +173,7 @@ const studies: Record<string, CaseStudy> = {
     ],
     sections: [
       {
-        heading: "The problem",
+        heading: "The challenge",
         body: "Funnel's Integration Engineering team builds custom connectors when the core offering and self-service tools fall short. Demand kept growing, but a huge slice of their time was being spent on simple, repetitive requests — not the trickier cases that actually needed them.",
       },
       {
