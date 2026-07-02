@@ -445,6 +445,20 @@ function GallerySection() {
           role="dialog"
           aria-modal="true"
           onClick={() => setOpenIndex(null)}
+          onTouchStart={(e) => { touchStartX.current = e.changedTouches[0].screenX; }}
+          onTouchEnd={(e) => {
+            const start = touchStartX.current;
+            if (start === null) return;
+            const end = e.changedTouches[0].screenX;
+            const diff = start - end;
+            const threshold = 50;
+            if (diff > threshold) {
+              setOpenIndex((i) => (i === null ? i : (i + 1) % gallery.length));
+            } else if (diff < -threshold) {
+              setOpenIndex((i) => (i === null ? i : (i - 1 + gallery.length) % gallery.length));
+            }
+            touchStartX.current = null;
+          }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 md:p-10 backdrop-blur-sm animate-in fade-in"
         >
           <button
