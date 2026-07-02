@@ -14,7 +14,7 @@ import scp1 from "@/assets/scp1.png.asset.json";
 import ioe1 from "@/assets/ioe1.jpeg.asset.json";
 import ioe2 from "@/assets/ioe2.png.asset.json";
 import ioe3 from "@/assets/ioe3.png.asset.json";
-import fpHero from "@/assets/fp_hero.jpg.asset.json";
+import fpHero from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
 import fpPrep from "@/assets/fp_prep.jpg.asset.json";
 import fpPoc from "@/assets/fp_poc.jpg.asset.json";
 import fpKillForm from "@/assets/fp_killform.jpg.asset.json";
