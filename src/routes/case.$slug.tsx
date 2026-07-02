@@ -349,6 +349,27 @@ function CaseStudyPage() {
                 <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
                   {s.body}
                 </p>
+                {s.images && s.images.length > 0 && (
+                  <div className="mt-8 space-y-8">
+                    {s.images.map((img, i) => (
+                      <figure key={i}>
+                        <div className="overflow-hidden rounded-xl border border-border bg-card">
+                          <img
+                            src={img.src}
+                            alt={img.caption ?? ""}
+                            loading="lazy"
+                            className="w-full h-auto"
+                          />
+                        </div>
+                        {img.caption && (
+                          <figcaption className="mt-3 text-center text-sm italic text-muted-foreground">
+                            {img.caption}
+                          </figcaption>
+                        )}
+                      </figure>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
