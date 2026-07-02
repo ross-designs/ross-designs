@@ -7,7 +7,7 @@ import caseAutomation from "@/assets/case-automation.jpg";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
 import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-2.png.asset.json";
-import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-2.png.asset.json";
+import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-3.png.asset.json";
 import galleryFbAccounts from "@/assets/Facebook_Ads_-_Accounts.png.asset.json";
 import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview-2.png.asset.json";
 import galleryFileTransport from "@/assets/File_Import_-_Transport_Type.png.asset.json";
@@ -408,8 +408,8 @@ function GallerySection() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground text-pretty">
             A selection of screens from features I've shaped inside the Funnel app —
-            from the data sources hub to the connection flows for Google Ads,
-            Facebook Ads, File Import and Google Sheets.
+            from the data sources overview to the connection flows for Google Ads,
+            Google Analytics, Facebook Ads, File Import and Google Sheets.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
