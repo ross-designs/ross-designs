@@ -288,7 +288,7 @@ const studies: Record<string, CaseStudy> = {
       "A reusable preview framework live across three connectors and rolling out to the rest — turning a guess-and-check loop into a confident, one-shot connection.",
     metrics: [
       { value: "3", label: "Connectors live at launch" },
-      { value: "~hours", label: "Per-connector rollout" },
+      { value: "-80%", label: "Reduction in support tickets" },
       { value: "A/B", label: "Validated in-flow" },
     ],
   },
