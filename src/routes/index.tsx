@@ -422,13 +422,13 @@ function GallerySection() {
                 type="button"
                 onClick={() => setOpenIndex(i)}
                 aria-label={`Open ${g.title} full screen`}
-                className="block w-full overflow-hidden cursor-zoom-in aspect-[4/3] bg-muted"
+                className="block w-full overflow-hidden cursor-zoom-in"
               >
                 <img
                   src={g.img}
                   alt={g.title}
                   loading="lazy"
-                  className="w-full h-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]"
+                  className="w-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]"
                 />
               </button>
               <figcaption className="border-t border-border px-6 py-5">
