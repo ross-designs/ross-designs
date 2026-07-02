@@ -4,7 +4,7 @@ import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
-import caseFieldPreview from "@/assets/fp_hero.jpg.asset.json";
+import caseFieldPreview from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
 import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-3.png.asset.json";
