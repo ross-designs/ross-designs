@@ -379,6 +379,7 @@ function Contact() {
 
 function GallerySection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
     if (openIndex === null) return;
