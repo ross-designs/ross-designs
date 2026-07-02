@@ -243,7 +243,7 @@ const studies: Record<string, CaseStudy> = {
     subtitle:
       "A cross-team hack-day initiative that let users preview the fields and data they'd get from a source — before committing to a connection.",
     image: fpHero.url,
-    imageCaption: "Sneak peek of the Facebook Ads preview surface",
+    imageCaption: "The field & data preview design in Figma",
     meta: [
       { label: "Role", value: "Lead designer" },
       { label: "Team", value: "Connect, Data-In, Key" },
