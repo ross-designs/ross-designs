@@ -39,7 +39,7 @@ type CaseStudy = {
 const studies: Record<string, CaseStudy> = {
   personas: {
     slug: "personas",
-    n: "01",
+    n: "02",
     tag: "Research · Strategy",
     title: "Who uses Funnel?",
     subtitle:
@@ -89,7 +89,7 @@ const studies: Record<string, CaseStudy> = {
   },
   flexibility: {
     slug: "flexibility",
-    n: "02",
+    n: "03",
     tag: "Workflow redesign",
     title: "Adapting to change",
     subtitle:
@@ -141,7 +141,7 @@ const studies: Record<string, CaseStudy> = {
   },
   ia: {
     slug: "ia",
-    n: "03",
+    n: "04",
     tag: "Information architecture",
     title: "A simplified connection process",
     subtitle:
@@ -189,7 +189,7 @@ const studies: Record<string, CaseStudy> = {
   },
   automation: {
     slug: "automation",
-    n: "04",
+    n: "05",
     tag: "Self-serve · Scale",
     title: "Increasing operational efficiency",
     subtitle:
@@ -237,7 +237,7 @@ const studies: Record<string, CaseStudy> = {
   },
   "field-preview": {
     slug: "field-preview",
-    n: "05",
+    n: "01",
     tag: "Cross-team · Discovery",
     title: "Breaking the guess-and-check loop",
     subtitle:
@@ -294,7 +294,7 @@ const studies: Record<string, CaseStudy> = {
   },
 };
 
-const order = ["personas", "flexibility", "ia", "automation", "field-preview"];
+const order = ["field-preview", "personas", "flexibility", "ia", "automation"];
 for (const slug of order) {
   const i = order.indexOf(slug);
   const prev = order[i - 1];
