@@ -3,8 +3,19 @@ import casePersonas from "@/assets/pic02.jpg.asset.json";
 import caseFlexibility from "@/assets/pic03.jpg.asset.json";
 import caseIA from "@/assets/pic04.jpg.asset.json";
 import caseAutomation from "@/assets/pic05.jpg.asset.json";
+import bp1 from "@/assets/bp1.png.asset.json";
+import bp2 from "@/assets/bp2.png.asset.json";
+import bp3 from "@/assets/bp3.png.asset.json";
+import atc1 from "@/assets/atc1.png.asset.json";
+import atc2 from "@/assets/atc2.png.asset.json";
+import atc3 from "@/assets/atc3.png.asset.json";
+import scp1 from "@/assets/scp1.png.asset.json";
+import ioe1 from "@/assets/ioe1.jpeg.asset.json";
+import ioe2 from "@/assets/ioe2.png.asset.json";
+import ioe3 from "@/assets/ioe3.png.asset.json";
 
-type Section = { heading: string; body: string };
+type SectionImage = { src: string; caption?: string };
+type Section = { heading: string; body: string; images?: SectionImage[] };
 type CaseStudy = {
   slug: string;
   n: string;
