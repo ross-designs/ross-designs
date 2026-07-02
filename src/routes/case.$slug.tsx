@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import casePersonas from "@/assets/pic02.jpg.asset.json";
 import caseFlexibility from "@/assets/pic03.jpg.asset.json";
 import caseIA from "@/assets/pic04.jpg.asset.json";
@@ -277,6 +278,44 @@ export const Route = createFileRoute("/case/$slug")({
 
 function CaseStudyPage() {
   const study = Route.useLoaderData() as CaseStudy;
+  const lightboxImages = useMemo<SectionImage[]>(() => {
+    const imgs: SectionImage[] = [{ src: study.image, caption: study.imageCaption }];
+    for (const s of study.sections) {
+      if (s.images) imgs.push(...s.images);
+    }
+    return imgs;
+  }, [study]);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
+
+  const close = useCallback(() => setOpenIndex(null), []);
+  const prev = useCallback(
+    () => setOpenIndex((i) => (i === null ? i : (i - 1 + lightboxImages.length) % lightboxImages.length)),
+    [lightboxImages.length],
+  );
+  const next = useCallback(
+    () => setOpenIndex((i) => (i === null ? i : (i + 1) % lightboxImages.length)),
+    [lightboxImages.length],
+  );
+
+  useEffect(() => {
+    if (openIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowLeft") prev();
+      else if (e.key === "ArrowRight") next();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [openIndex, close, prev, next]);
+
+  const indexOfSectionImage = (src: string) => lightboxImages.findIndex((im) => im.src === src);
+
   return (
     <main className="min-h-screen bg-background text-foreground antialiased">
       <CaseNav />
@@ -314,13 +353,17 @@ function CaseStudyPage() {
         </header>
 
         <div className="mx-auto max-w-6xl px-6 py-12 md:py-16">
-          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-[0_30px_80px_-40px_oklch(0.5_0.18_255_/_0.35)]">
+          <button
+            type="button"
+            onClick={() => setOpenIndex(0)}
+            className="block w-full overflow-hidden rounded-2xl border border-border bg-card shadow-[0_30px_80px_-40px_oklch(0.5_0.18_255_/_0.35)] cursor-zoom-in"
+          >
             <img
               src={study.image}
               alt={study.title}
               className="aspect-[16/9] w-full object-cover"
             />
-          </div>
+          </button>
           {study.imageCaption && (
             <p className="mt-3 text-center text-sm italic text-muted-foreground">
               {study.imageCaption}
@@ -352,15 +395,19 @@ function CaseStudyPage() {
                 {s.images && s.images.length > 0 && (
                   <div className="mt-8 space-y-8">
                     {s.images.map((img, i) => (
-                      <figure key={i}>
-                        <div className="overflow-hidden rounded-xl border border-border bg-card">
-                          <img
-                            src={img.src}
-                            alt={img.caption ?? ""}
-                            loading="lazy"
-                            className="w-full h-auto"
-                          />
-                        </div>
+                       <figure key={i}>
+                         <button
+                           type="button"
+                           onClick={() => setOpenIndex(indexOfSectionImage(img.src))}
+                           className="block w-full overflow-hidden rounded-xl border border-border bg-card cursor-zoom-in"
+                         >
+                           <img
+                             src={img.src}
+                             alt={img.caption ?? ""}
+                             loading="lazy"
+                             className="w-full h-auto"
+                           />
+                         </button>
                         {img.caption && (
                           <figcaption className="mt-3 text-center text-sm italic text-muted-foreground">
                             {img.caption}
@@ -425,6 +472,67 @@ function CaseStudyPage() {
           </a>
         </div>
       </footer>
+      {openIndex !== null && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
+          onClick={close}
+          onTouchStart={(e) => {
+            touchStartX.current = e.touches[0].clientX;
+          }}
+          onTouchEnd={(e) => {
+            if (touchStartX.current === null) return;
+            const dx = e.changedTouches[0].clientX - touchStartX.current;
+            touchStartX.current = null;
+            if (Math.abs(dx) > 50) {
+              if (dx < 0) next();
+              else prev();
+            }
+          }}
+        >
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); close(); }}
+            aria-label="Close"
+            className="absolute top-4 right-4 rounded-full bg-white/10 text-white w-10 h-10 flex items-center justify-center hover:bg-white/20"
+          >
+            ✕
+          </button>
+          {lightboxImages.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); prev(); }}
+                aria-label="Previous"
+                className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/10 text-white w-10 h-10 flex items-center justify-center hover:bg-white/20"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); next(); }}
+                aria-label="Next"
+                className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/10 text-white w-10 h-10 flex items-center justify-center hover:bg-white/20"
+              >
+                ›
+              </button>
+            </>
+          )}
+          <figure className="max-w-[95vw] max-h-[90vh] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={lightboxImages[openIndex].src}
+              alt={lightboxImages[openIndex].caption ?? ""}
+              className="max-w-[95vw] max-h-[85vh] object-contain rounded-lg"
+            />
+            {lightboxImages[openIndex].caption && (
+              <figcaption className="mt-3 text-center text-sm italic text-white/80">
+                {lightboxImages[openIndex].caption}
+              </figcaption>
+            )}
+          </figure>
+        </div>
+      )}
     </main>
   );
 }
