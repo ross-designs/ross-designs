@@ -1,8 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import casePersonas from "@/assets/case-personas.jpg";
-import caseFlexibility from "@/assets/case-flexibility.jpg";
-import caseIA from "@/assets/case-ia.jpg";
-import caseAutomation from "@/assets/case-automation.jpg";
+import casePersonas from "@/assets/pic02.jpg.asset.json";
+import caseFlexibility from "@/assets/pic03.jpg.asset.json";
+import caseIA from "@/assets/pic04.jpg.asset.json";
+import caseAutomation from "@/assets/pic05.jpg.asset.json";
 
 type Section = { heading: string; body: string };
 type CaseStudy = {
@@ -12,6 +12,7 @@ type CaseStudy = {
   title: string;
   subtitle: string;
   image: string;
+  imageCaption?: string;
   meta: { label: string; value: string }[];
   sections: Section[];
   outcome: string;
@@ -28,7 +29,8 @@ const studies: Record<string, CaseStudy> = {
     title: "Who uses Funnel?",
     subtitle:
       "Building empathy and a shared customer model for marketing, sales, product and CS through buyer personas.",
-    image: casePersonas,
+    image: casePersonas.url,
+    imageCaption: "Reference cards for the buyer personas",
     meta: [
       { label: "Role", value: "Lead designer & researcher" },
       { label: "Team", value: "Marketing, Sales, Product, CS" },
@@ -74,7 +76,8 @@ const studies: Record<string, CaseStudy> = {
     title: "Adapting to change",
     subtitle:
       "Replacing destructive edits with a flexible data model so users could evolve their setup without starting over.",
-    image: caseFlexibility,
+    image: caseFlexibility.url,
+    imageCaption: "Editing dataset configuration in Funnel",
     meta: [
       { label: "Role", value: "Product designer" },
       { label: "Team", value: "Product, Engineering, Support" },
@@ -120,7 +123,8 @@ const studies: Record<string, CaseStudy> = {
     title: "A simplified connection process",
     subtitle:
       "Untangling a page that tried to be a setup flow, an overview, and a workspace — without splintering the experience.",
-    image: caseIA,
+    image: caseIA.url,
+    imageCaption: "Simplified file-import connection flow",
     meta: [
       { label: "Role", value: "Lead designer" },
       { label: "Team", value: "Cross-team feature" },
@@ -166,7 +170,8 @@ const studies: Record<string, CaseStudy> = {
     title: "Increasing operational efficiency",
     subtitle:
       "Letting Integration Engineering focus on the hard problems by giving customers a self-serve path through the long tail.",
-    image: caseAutomation,
+    image: caseAutomation.url,
+    imageCaption: "Self-serve integration setup",
     meta: [
       { label: "Role", value: "Product designer" },
       { label: "Team", value: "Integration Engineering, Product" },
@@ -291,6 +296,11 @@ function CaseStudyPage() {
               className="aspect-[16/9] w-full object-cover"
             />
           </div>
+          {study.imageCaption && (
+            <p className="mt-3 text-center text-sm italic text-muted-foreground">
+              {study.imageCaption}
+            </p>
+          )}
         </div>
 
         <section className="mx-auto max-w-3xl px-6 pb-16">
