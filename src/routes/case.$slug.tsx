@@ -281,7 +281,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Reflections",
-        body: "Field listing and data preview aren't competing solutions — users flick between them. The most logical default is fields first, data second. The framework is now live for Facebook Pages, Instagram Ads and Google Analytics, with Google Ads, Threads and Facebook Ads next in the pipeline, and adoptable by any connector in a handful of hours.",
+        body: "After reviewing user sessions in FullStory, it was clear that field listing and data previews aren't competing solutions — users flick between them. We decided to update the order to fields first and the data preview second, as this best suited the user's mental model.",
       },
     ],
     outcome:
