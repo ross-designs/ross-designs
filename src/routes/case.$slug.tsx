@@ -274,7 +274,6 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "Group 2 — Field listing",
         body: "Inspired by our Google Analytics field picker, we explored a full field picker for Google Ads — technically possible, but custom fields, attribution windows and filters made it too heavy for the time-box. We pivoted to a simple, configuration-driven field list that shipped the same insight with a fraction of the complexity.",
-        images: [{ src: fpKillForm.url, caption: "Exploring a field picker to replace the connect form" }],
       },
       {
         heading: "Launch & conclusions",
