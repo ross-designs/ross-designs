@@ -6,10 +6,10 @@ import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
-import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect.png.asset.json";
-import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure.png.asset.json";
+import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-2.png.asset.json";
+import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-2.png.asset.json";
 import galleryFbAccounts from "@/assets/Facebook_Ads_-_Accounts.png.asset.json";
-import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview.png.asset.json";
+import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview-2.png.asset.json";
 import galleryFileTransport from "@/assets/File_Import_-_Transport_Type.png.asset.json";
 import galleryFileUpload from "@/assets/File_Import_-_Upload.png.asset.json";
 import galleryFileConfigure from "@/assets/File_Import_-_Configure.png.asset.json";
@@ -95,7 +95,7 @@ const experience = [
 ];
 
 const gallery = [
-  { img: galleryDataSources.url, title: "Data sources overview", caption: "The central hub where users manage every connected data source." },
+  { img: galleryDataSources.url, title: "Data Sources · Overview", caption: "The central hub where users manage every connected data source." },
   { img: galleryGoogleAdsConn.url, title: "Google Ads · Authenticate", caption: "Streamlined credential selection in the connection flow." },
   { img: galleryGoogleAdsConfig.url, title: "Google Ads · Configure", caption: "Guided configuration with contextual help built in." },
   { img: galleryFbAccounts.url, title: "Facebook Ads · Select accounts", caption: "Clear account selection with search, bulk actions, and premium upgrades in-context." },
