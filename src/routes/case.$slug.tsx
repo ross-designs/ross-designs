@@ -277,7 +277,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Launch & conclusions",
-        body: "We shipped both a data preview and a searchable field list, A/B tested which surface users landed on, and instrumented the flow with lightweight tracking. Fullstory sessions confirmed the feature was being used as intended — enough signal to be confident it was solving the problem without waiting on a heavy measurement setup.",
+        body: "We shipped both a data preview and a searchable field list, A/B tested which one users saw first, and instrumented the flow with lightweight tracking. Fullstory sessions confirmed the feature was being used as intended, which in this case was enough signal to be confident it was solving the problem without creating a heavy measurement setup.\n\nFor the data sources which this new feature was implemented for, we saw an 80% decline in relevant support tickets.",
       },
       {
         heading: "Reflections",
