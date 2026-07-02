@@ -374,6 +374,24 @@ function Contact() {
 }
 
 function GallerySection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (openIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenIndex(null);
+      if (e.key === "ArrowRight") setOpenIndex((i) => (i === null ? i : (i + 1) % gallery.length));
+      if (e.key === "ArrowLeft") setOpenIndex((i) => (i === null ? i : (i - 1 + gallery.length) % gallery.length));
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [openIndex]);
+
   return (
     <section id="gallery" className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-28 md:py-36">
@@ -391,19 +409,24 @@ function GallerySection() {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {gallery.map((g) => (
+          {gallery.map((g, i) => (
             <figure
               key={g.title}
               className="group overflow-hidden rounded-2xl border border-border bg-background"
             >
-              <div className="overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setOpenIndex(i)}
+                aria-label={`Open ${g.title} full screen`}
+                className="block w-full overflow-hidden cursor-zoom-in"
+              >
                 <img
                   src={g.img}
                   alt={g.title}
                   loading="lazy"
                   className="w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
                 />
-              </div>
+              </button>
               <figcaption className="border-t border-border px-6 py-5">
                 <div className="font-display text-lg tracking-tight">{g.title}</div>
                 <div className="mt-1 text-sm text-muted-foreground">{g.caption}</div>
@@ -412,6 +435,50 @@ function GallerySection() {
           ))}
         </div>
       </div>
+      {openIndex !== null && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setOpenIndex(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 md:p-10 backdrop-blur-sm animate-in fade-in"
+        >
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setOpenIndex(null); }}
+            aria-label="Close"
+            className="absolute top-4 right-4 md:top-6 md:right-6 rounded-full bg-white/10 hover:bg-white/20 text-white w-10 h-10 flex items-center justify-center text-xl"
+          >
+            ×
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setOpenIndex((i) => (i === null ? i : (i - 1 + gallery.length) % gallery.length)); }}
+            aria-label="Previous"
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 rounded-full bg-white/10 hover:bg-white/20 text-white w-10 h-10 flex items-center justify-center"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setOpenIndex((i) => (i === null ? i : (i + 1) % gallery.length)); }}
+            aria-label="Next"
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 rounded-full bg-white/10 hover:bg-white/20 text-white w-10 h-10 flex items-center justify-center"
+          >
+            ›
+          </button>
+          <figure onClick={(e) => e.stopPropagation()} className="max-w-[95vw] max-h-[90vh] flex flex-col items-center gap-4">
+            <img
+              src={gallery[openIndex].img}
+              alt={gallery[openIndex].title}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+            />
+            <figcaption className="text-center text-white/90">
+              <div className="font-display text-lg tracking-tight">{gallery[openIndex].title}</div>
+              <div className="mt-1 text-sm text-white/60">{gallery[openIndex].caption}</div>
+            </figcaption>
+          </figure>
+        </div>
+      )}
     </section>
   );
 }
