@@ -48,6 +48,16 @@ const metrics = [
 const cases = [
   {
     n: "01",
+    img: caseFieldPreview.url,
+    tag: "Cross-team · Discovery",
+    title: "Breaking the guess-and-check loop for data connections",
+    blurb:
+      "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting — replacing a slow connect-check-reconfigure loop with confidence up front.",
+    outcome: "Reusable preview framework live across three connectors, rolling out to the rest.",
+    href: "/case/field-preview",
+  },
+  {
+    n: "02",
     img: casePersonas,
     tag: "Research · Strategy",
     title: "Designing personas that aligned an entire product org",
@@ -57,7 +67,7 @@ const cases = [
     href: "/case/personas",
   },
   {
-    n: "02",
+    n: "03",
     img: caseFlexibility,
     tag: "Workflow redesign",
     title: "Replacing destructive edits with a flexible data model",
@@ -67,7 +77,7 @@ const cases = [
     href: "/case/flexibility",
   },
   {
-    n: "03",
+    n: "04",
     img: caseIA,
     tag: "Information architecture",
     title: "Untangling a page that tried to be three things at once",
@@ -77,7 +87,7 @@ const cases = [
     href: "/case/ia",
   },
   {
-    n: "04",
+    n: "05",
     img: caseAutomation,
     tag: "Self-serve · Scale",
     title: "Letting the team focus on the hard problems",
@@ -85,16 +95,6 @@ const cases = [
       "CS was buried in simple, repetitive requests. I designed a self-serve solution that handled the long tail, freeing the team for high-impact work.",
     outcome: "Contributed to a 45% reduction in inbound support load.",
     href: "/case/automation",
-  },
-  {
-    n: "05",
-    img: caseFieldPreview.url,
-    tag: "Cross-team · Discovery",
-    title: "Breaking the guess-and-check loop for data connections",
-    blurb:
-      "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting — replacing a slow connect-check-reconfigure loop with confidence up front.",
-    outcome: "Reusable preview framework live across three connectors, rolling out to the rest.",
-    href: "/case/field-preview",
   },
 ];
 
