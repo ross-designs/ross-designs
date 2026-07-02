@@ -296,6 +296,11 @@ function CaseStudyPage() {
               className="aspect-[16/9] w-full object-cover"
             />
           </div>
+          {study.imageCaption && (
+            <p className="mt-3 text-center text-sm italic text-muted-foreground">
+              {study.imageCaption}
+            </p>
+          )}
         </div>
 
         <section className="mx-auto max-w-3xl px-6 pb-16">
