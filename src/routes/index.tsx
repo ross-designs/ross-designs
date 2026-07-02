@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
