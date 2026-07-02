@@ -369,6 +369,53 @@ function Experience() {
 }
 
 function Contact() {
+  return ContactImpl();
+}
+
+function GallerySection() {
+  return (
+    <section id="gallery" className="border-t border-border bg-card/40">
+      <div className="mx-auto max-w-7xl px-6 py-28 md:py-36">
+        <div className="mb-16 max-w-3xl">
+          <div className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            Gallery
+          </div>
+          <h2 className="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">
+            A closer look at the product.
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground text-pretty">
+            A selection of screens from features I've shaped inside the Funnel app —
+            from the data sources hub to the connection flows for Google Ads,
+            Facebook Ads, File Import and Google Sheets.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2">
+          {gallery.map((g) => (
+            <figure
+              key={g.title}
+              className="group overflow-hidden rounded-2xl border border-border bg-background"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={g.img}
+                  alt={g.title}
+                  loading="lazy"
+                  className="w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="border-t border-border px-6 py-5">
+                <div className="font-display text-lg tracking-tight">{g.title}</div>
+                <div className="mt-1 text-sm text-muted-foreground">{g.caption}</div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactImpl() {
   return (
     <section id="contact" className="relative overflow-hidden border-t border-border">
       <div
