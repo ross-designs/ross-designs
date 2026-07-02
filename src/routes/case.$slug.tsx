@@ -15,9 +15,8 @@ import ioe1 from "@/assets/ioe1.jpeg.asset.json";
 import ioe2 from "@/assets/ioe2.png.asset.json";
 import ioe3 from "@/assets/ioe3.png.asset.json";
 import fpHero from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
-import fpPrep from "@/assets/fp_prep.jpg.asset.json";
+import fpPrep from "@/assets/fp_prep_whiteboard.png.asset.json";
 import fpPoc from "@/assets/fp_poc.jpg.asset.json";
-import fpKillForm from "@/assets/fp_killform.jpg.asset.json";
 
 type SectionImage = { src: string; caption?: string };
 type Section = { heading: string; body: string; images?: SectionImage[] };
