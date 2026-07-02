@@ -15,9 +15,8 @@ import ioe1 from "@/assets/ioe1.jpeg.asset.json";
 import ioe2 from "@/assets/ioe2.png.asset.json";
 import ioe3 from "@/assets/ioe3.png.asset.json";
 import fpHero from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
-import fpPrep from "@/assets/fp_prep.jpg.asset.json";
+import fpPrep from "@/assets/fp_prep_whiteboard.png.asset.json";
 import fpPoc from "@/assets/fp_poc.jpg.asset.json";
-import fpKillForm from "@/assets/fp_killform.jpg.asset.json";
 
 type SectionImage = { src: string; caption?: string };
 type Section = { heading: string; body: string; images?: SectionImage[] };
@@ -275,7 +274,6 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "Group 2 — Field listing",
         body: "Inspired by our Google Analytics field picker, we explored a full field picker for Google Ads — technically possible, but custom fields, attribution windows and filters made it too heavy for the time-box. We pivoted to a simple, configuration-driven field list that shipped the same insight with a fraction of the complexity.",
-        images: [{ src: fpKillForm.url, caption: "Exploring a field picker to replace the connect form" }],
       },
       {
         heading: "Launch & conclusions",
