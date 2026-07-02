@@ -4,6 +4,13 @@ import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
+import galleryDataSources from "@/assets/Data_Sources_Page.png.asset.json";
+import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connection.png.asset.json";
+import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configuration.png.asset.json";
+import galleryFbConfig from "@/assets/Facebook_Ads_-_Configuration.png.asset.json";
+import galleryFbPreview from "@/assets/Facebook_Ads_-_Data_Preview.png.asset.json";
+import galleryFileImport from "@/assets/File_Import_-_Configuration.png.asset.json";
+import gallerySheets from "@/assets/Google_Sheets_-_Configuration.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,6 +91,16 @@ const experience = [
   { years: "2015 — 2018", role: "CSM / Product Specialist", company: "Funnel AB" },
 ];
 
+const gallery = [
+  { img: galleryDataSources.url, title: "Data sources overview", caption: "The central hub where users manage every connected data source." },
+  { img: galleryGoogleAdsConn.url, title: "Google Ads · Authenticate", caption: "Streamlined credential selection in the connection flow." },
+  { img: galleryGoogleAdsConfig.url, title: "Google Ads · Configure", caption: "Guided configuration with contextual help built in." },
+  { img: galleryFbConfig.url, title: "Facebook Ads · Configure", caption: "Grouped field options that scale to complex reporting needs." },
+  { img: galleryFbPreview.url, title: "Facebook Ads · Field preview", caption: "Confirmation step with a full preview of what will sync." },
+  { img: galleryFileImport.url, title: "File Import · Configure", caption: "Spreadsheet-style mapping that turns raw CSVs into usable data." },
+  { img: gallerySheets.url, title: "Google Sheets · Select", caption: "Instant data preview to validate the sheet before connecting." },
+];
+
 function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground antialiased">
@@ -93,6 +110,7 @@ function Index() {
       <Work />
       <About />
       <Experience />
+      <GallerySection />
       <Contact />
       <Footer />
     </main>
@@ -110,6 +128,7 @@ function Nav() {
           <a href="#work" className="hover:text-foreground transition-colors">Work</a>
           <a href="#about" className="hover:text-foreground transition-colors">About</a>
           <a href="#experience" className="hover:text-foreground transition-colors">Experience</a>
+          <a href="#gallery" className="hover:text-foreground transition-colors">Gallery</a>
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </nav>
         <a
@@ -350,6 +369,53 @@ function Experience() {
 }
 
 function Contact() {
+  return ContactImpl();
+}
+
+function GallerySection() {
+  return (
+    <section id="gallery" className="border-t border-border bg-card/40">
+      <div className="mx-auto max-w-7xl px-6 py-28 md:py-36">
+        <div className="mb-16 max-w-3xl">
+          <div className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            Gallery
+          </div>
+          <h2 className="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">
+            A closer look at the product.
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground text-pretty">
+            A selection of screens from features I've shaped inside the Funnel app —
+            from the data sources hub to the connection flows for Google Ads,
+            Facebook Ads, File Import and Google Sheets.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2">
+          {gallery.map((g) => (
+            <figure
+              key={g.title}
+              className="group overflow-hidden rounded-2xl border border-border bg-background"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={g.img}
+                  alt={g.title}
+                  loading="lazy"
+                  className="w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="border-t border-border px-6 py-5">
+                <div className="font-display text-lg tracking-tight">{g.title}</div>
+                <div className="mt-1 text-sm text-muted-foreground">{g.caption}</div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactImpl() {
   return (
     <section id="contact" className="relative overflow-hidden border-t border-border">
       <div
