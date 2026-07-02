@@ -6,7 +6,7 @@ import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
-import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-2.png.asset.json";
+import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-3.png.asset.json";
 import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-3.png.asset.json";
 import galleryFbAccounts from "@/assets/Facebook_Ads_-_Accounts.png.asset.json";
 import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview-2.png.asset.json";
