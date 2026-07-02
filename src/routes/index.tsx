@@ -4,6 +4,7 @@ import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
+import caseFieldPreview from "@/assets/fp_hero.jpg.asset.json";
 import rossProfile from "@/assets/ross-profile.jpg.asset.json";
 import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
 import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-3.png.asset.json";
@@ -84,6 +85,16 @@ const cases = [
       "CS was buried in simple, repetitive requests. I designed a self-serve solution that handled the long tail, freeing the team for high-impact work.",
     outcome: "Contributed to a 45% reduction in inbound support load.",
     href: "/case/automation",
+  },
+  {
+    n: "05",
+    img: caseFieldPreview.url,
+    tag: "Cross-team · Discovery",
+    title: "Breaking the guess-and-check loop for data connections",
+    blurb:
+      "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting — replacing a slow connect-check-reconfigure loop with confidence up front.",
+    outcome: "Reusable preview framework live across three connectors, rolling out to the rest.",
+    href: "/case/field-preview",
   },
 ];
 
@@ -235,7 +246,7 @@ function Work() {
           </h2>
         </div>
         <div className="hidden text-right text-sm text-muted-foreground md:block">
-          Four studies from<br />Funnel AB · 2021–2026
+          Five studies from<br />Funnel AB · 2021–2026
         </div>
       </div>
 

@@ -14,6 +14,10 @@ import scp1 from "@/assets/scp1.png.asset.json";
 import ioe1 from "@/assets/ioe1.jpeg.asset.json";
 import ioe2 from "@/assets/ioe2.png.asset.json";
 import ioe3 from "@/assets/ioe3.png.asset.json";
+import fpHero from "@/assets/fp_hero.jpg.asset.json";
+import fpPrep from "@/assets/fp_prep.jpg.asset.json";
+import fpPoc from "@/assets/fp_poc.jpg.asset.json";
+import fpKillForm from "@/assets/fp_killform.jpg.asset.json";
 
 type SectionImage = { src: string; caption?: string };
 type Section = { heading: string; body: string; images?: SectionImage[] };
@@ -232,9 +236,67 @@ const studies: Record<string, CaseStudy> = {
       { value: "Self-serve", label: "Long-tail coverage" },
     ],
   },
+  "field-preview": {
+    slug: "field-preview",
+    n: "05",
+    tag: "Cross-team · Discovery",
+    title: "Breaking the guess-and-check loop",
+    subtitle:
+      "A cross-team hack-day initiative that let users preview the fields and data they'd get from a source — before committing to a connection.",
+    image: fpHero.url,
+    imageCaption: "Sneak peek of the Facebook Ads preview surface",
+    meta: [
+      { label: "Role", value: "Lead designer" },
+      { label: "Team", value: "Connect, Data-In, Key" },
+    ],
+    sections: [
+      {
+        heading: "The challenge",
+        body: "Users found it difficult to understand what they'd actually get when connecting a new data source. They didn't know which fields a given configuration would produce, or what the underlying data would look like — so the standard workflow was: connect a source, check the Data Explorer, reconfigure, repeat. A slow, frustrating guess-and-check loop that also drove avoidable support load.",
+      },
+      {
+        heading: "The idea",
+        body: "Break — or drastically shorten — that loop by surfacing a preview inside the connect flow itself. Two candidate approaches: a live data preview using the current configuration, and a searchable field listing based on that configuration.",
+      },
+      {
+        heading: "Research",
+        body: "I partnered with Solutions, Support and the PLG team to gather insights, sifted through Slack and Intercom for recurring requests, and looked at how competitors handled the same problem. I built early prototypes in Figma ahead of the hack-day so we could react to a concrete design rather than a blank page.",
+      },
+      {
+        heading: "Preparations",
+        body: "Before hacking, we reviewed the research together, walked through the prototypes and mapped pros and cons for each problem space — quota concerns, per-connector effort, backend readiness — so the split into two focused teams was grounded in trade-offs, not guesses.",
+        images: [{ src: fpPrep.url, caption: "Mapping pros and cons for field listing vs. data preview" }],
+      },
+      {
+        heading: "Group 1 — Data preview",
+        body: "We tested with Instagram Insights: a limited download entry point returned a live sample directly to a new preview step between configuration and connect, complete with pretty field names pulled from the connector schema.",
+        images: [{ src: fpPoc.url, caption: "First stab at the in-flow data preview" }],
+      },
+      {
+        heading: "Group 2 — Field listing",
+        body: "Inspired by our Google Analytics field picker, we explored a full field picker for Google Ads — technically possible, but custom fields, attribution windows and filters made it too heavy for the time-box. We pivoted to a simple, configuration-driven field list that shipped the same insight with a fraction of the complexity.",
+        images: [{ src: fpKillForm.url, caption: "Exploring a field picker to replace the connect form" }],
+      },
+      {
+        heading: "Launch & conclusions",
+        body: "We shipped both a data preview and a searchable field list, A/B tested which surface users landed on, and instrumented the flow with lightweight tracking. Fullstory sessions confirmed the feature was being used as intended — enough signal to be confident it was solving the problem without waiting on a heavy measurement setup.",
+      },
+      {
+        heading: "Reflections",
+        body: "Field listing and data preview aren't competing solutions — users flick between them. The most logical default is fields first, data second. The framework is now live for Facebook Pages, Instagram Ads and Google Analytics, with Google Ads, Threads and Facebook Ads next in the pipeline, and adoptable by any connector in a handful of hours.",
+      },
+    ],
+    outcome:
+      "A reusable preview framework live across three connectors and rolling out to the rest — turning a guess-and-check loop into a confident, one-shot connection.",
+    metrics: [
+      { value: "3", label: "Connectors live at launch" },
+      { value: "~hours", label: "Per-connector rollout" },
+      { value: "A/B", label: "Validated in-flow" },
+    ],
+  },
 };
 
-const order = ["personas", "flexibility", "ia", "automation"];
+const order = ["personas", "flexibility", "ia", "automation", "field-preview"];
 for (const slug of order) {
   const i = order.indexOf(slug);
   const prev = order[i - 1];
