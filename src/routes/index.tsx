@@ -110,7 +110,7 @@ function Index() {
       <Work />
       <About />
       <Experience />
-      <Gallery />
+      <GallerySection />
       <Contact />
       <Footer />
     </main>
