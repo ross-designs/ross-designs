@@ -172,9 +172,7 @@ function Hero() {
         <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
             <p className="max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
-              I'm <span className="text-foreground">Ross Barrett</span> — a product designer with a decade
-              inside SaaS, shaping workflows, research, and information architecture at Funnel. I ship work that moves the
-              metrics teams actually care about: support load, conversion, retention.
+              I'm <span className="text-foreground">Ross Barrett</span> — a senior product designer with over a decade of experience crafting intuitive, user-centered digital solutions. My expertise lies at the intersection of complex systems and human behavior, with a strong interest in optimising workflows with AI.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
