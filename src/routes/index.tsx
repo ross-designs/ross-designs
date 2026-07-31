@@ -171,11 +171,11 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
-            <h1 className="font-display text-balance text-5xl leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-              Designing SaaS products that <em className="text-primary not-italic">earn</em><br />
-              their numbers.
-            </h1>
-          <p className="mt-10 max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
+            <p className="mt-0 max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
+              I'm <span className="text-foreground">Ross Barrett</span> — a product designer with a decade
+              inside SaaS, shaping workflows, research, and information architecture at Funnel. I ship work that moves the
+              metrics teams actually care about: support load, conversion, retention.
+            </p>
             I'm <span className="text-foreground">Ross Barrett</span> — a product designer with a decade
             inside SaaS, shaping workflows, research, and information architecture at Funnel. I ship work that moves the
             metrics teams actually care about: support load, conversion, retention.
