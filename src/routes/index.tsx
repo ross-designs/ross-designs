@@ -174,21 +174,6 @@ function Hero() {
             <p className="max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
               I'm <span className="text-foreground">Ross Barrett</span> — a senior product designer with over a decade of experience crafting intuitive, user-centered digital solutions. My expertise lies at the intersection of complex systems and human behavior, with a strong interest in optimising workflows with AI.
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#work"
-              className="group inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
-            >
-              See selected work
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-3 rounded-full border border-border px-7 py-4 text-base font-medium text-foreground hover:bg-card transition-colors"
-            >
-              Get in touch
-            </a>
-          </div>
         </div>
           <div className="reveal hidden lg:flex lg:items-center lg:justify-center lg:-ml-12">
             <img
