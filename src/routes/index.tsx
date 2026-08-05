@@ -19,13 +19,13 @@ import gallerySheets from "@/assets/Google_Sheets_-_Connect.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ross Barrett — Senior Product Designer, SaaS" },
+      { title: "Ross Barrett | Senior Product Designer, SaaS" },
       {
         name: "description",
         content:
           "Product Designer with 10+ years in SaaS. I shipped redesigns that cut support tickets 45%, lifted landing page conversion 60%, and reduced churn 30%.",
       },
-      { property: "og:title", content: "Ross Barrett — Senior Product Designer" },
+      { property: "og:title", content: "Ross Barrett | Senior Product Designer" },
       {
         property: "og:description",
         content:
@@ -52,7 +52,7 @@ const cases = [
     tag: "Cross-team · Discovery",
     title: "Breaking the guess-and-check loop for data connections",
     blurb:
-      "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting — replacing a slow connect-check-reconfigure loop with confidence up front.",
+      "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting, replacing a slow connect-check-reconfigure loop with confidence up front.",
     outcome: "Reusable preview framework live across three connectors, rolling out to the rest.",
     href: "/case/field-preview",
   },
@@ -82,7 +82,7 @@ const cases = [
     tag: "Information architecture",
     title: "Untangling a page that tried to be three things at once",
     blurb:
-      "A single surface served as setup flow, overview, and workspace. I restructured the IA so each job got its own focused space — without splintering the experience.",
+      "A single surface served as setup flow, overview, and workspace. I restructured the IA so each job got its own focused space, without splintering the experience.",
     outcome: "Boosted engagement on core feature; reduced time-to-first-value.",
     href: "/case/ia",
   },
@@ -99,10 +99,10 @@ const cases = [
 ];
 
 const experience = [
-  { years: "2021 — Now", role: "Product Designer", company: "Funnel AB" },
-  { years: "2018 — 2021", role: "Product Marketing Manager", company: "Funnel AB" },
-  { years: "2015 — 2022", role: "Product Manager / CSM", company: "Qwaya (Funnel AB)" },
-  { years: "2015 — 2018", role: "CSM / Product Specialist", company: "Funnel AB" },
+  { years: "2021 to Now", role: "Product Designer", company: "Funnel AB" },
+  { years: "2018 to 2021", role: "Product Marketing Manager", company: "Funnel AB" },
+  { years: "2015 to 2022", role: "Product Manager / CSM", company: "Qwaya (Funnel AB)" },
+  { years: "2015 to 2018", role: "CSM / Product Specialist", company: "Funnel AB" },
 ];
 
 const gallery = [
@@ -111,7 +111,7 @@ const gallery = [
   { img: galleryGoogleAdsConfig.url, title: "Google Ads · Configure", caption: "Guided configuration with contextual help built in." },
   { img: galleryFbAccounts.url, title: "Facebook Ads · Select accounts", caption: "Clear account selection with search, bulk actions, and premium upgrades in-context." },
   { img: galleryFbPreview.url, title: "Facebook Ads · Field preview", caption: "Confirmation step with a full preview of what will sync." },
-  { img: galleryFileTransport.url, title: "File Import · Transport type", caption: "Choose how files reach Funnel — manual, email, or webhook — from a single step." },
+  { img: galleryFileTransport.url, title: "File Import · Transport type", caption: "Choose how files reach Funnel: manual, email, or webhook, all from a single step." },
   { img: galleryFileUpload.url, title: "File Import · Upload", caption: "A calm empty state that guides users to their first successful upload." },
   { img: galleryFileConfigure.url, title: "File Import · Configure", caption: "Spreadsheet-style mapping that turns raw files into usable data." },
   { img: gallerySheets.url, title: "Google Sheets · Select", caption: "Instant data preview to validate the sheet before connecting." },
@@ -172,7 +172,7 @@ function Hero() {
         <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
             <p className="max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
-              I'm <span className="text-foreground">Ross Barrett</span> — a senior product designer with over a decade of experience crafting intuitive, user-centered digital solutions. My expertise lies at the intersection of complex systems and human behavior, with a strong interest in optimising workflows with AI.
+              I'm <span className="text-foreground">Ross Barrett</span>, a senior product designer with over a decade of experience crafting intuitive, user-centered digital solutions. My expertise lies at the intersection of complex systems and human behavior, with a strong interest in optimising workflows with AI.
             </p>
         </div>
           <div className="reveal hidden lg:flex lg:items-center lg:justify-center lg:-ml-12">
@@ -298,7 +298,7 @@ function About() {
           <p className="text-pretty">
             At Funnel, I defined the design vision across three product lines alongside the CDO,
             running continuous discovery and validating with rapid prototyping. I think in
-            workflows and outcomes — what the user is actually trying to accomplish, and
+            workflows and outcomes: what the user is actually trying to accomplish, and
             what changes in the business when we get it right.
           </p>
           <p className="text-pretty">
@@ -398,7 +398,7 @@ function GallerySection() {
             A closer look at the product.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground text-pretty">
-            A selection of screens from features I've shaped inside the Funnel app —
+            A selection of screens from features I've shaped inside the Funnel app,
             from the data sources overview to the connection flows for Google Ads,
             Google Analytics, Facebook Ads, File Import and Google Sheets.
           </p>
