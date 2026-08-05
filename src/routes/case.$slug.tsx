@@ -53,11 +53,11 @@ const studies: Record<string, CaseStudy> = {
     sections: [
       {
         heading: "The challenge",
-        body: "Marketing was rethinking Funnel's positioning and needed a sharper view of existing customer segments — their goals, behaviours and attitudes. At the same time, Sales and CS were rolling out playbooks that lacked the customer attributes to make them land.",
+        body: "Marketing was rethinking Funnel's positioning and needed a sharper view of existing customer segments: their goals, behaviours and attitudes. At the same time, Sales and CS were rolling out playbooks that lacked the customer attributes to make them land.",
       },
       {
         heading: "The idea",
-        body: "Buyer personas were the most effective way to solve both problems at once — and to give the whole company a shared, empathetic view of who we were building for.",
+        body: "Buyer personas were the most effective way to solve both problems at once, and it gave the whole company a shared, empathetic view of who we were building for.",
       },
       {
         heading: "The scope",
@@ -70,17 +70,17 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Launch & conclusions",
-        body: "Five distinct buyer personas. We marketed them internally — printed cards, posters, presentations, company meeting slots — and they became the canonical customer model across product, marketing and CS, referenced in workshops, daily conversations and roadmap decisions.",
+        body: "Five distinct buyer personas. We marketed them internally with printed cards, posters, presentations and company meeting slots, and they became the canonical customer model across product, marketing and CS, referenced in workshops, daily conversations and roadmap decisions.",
         images: [{ src: bp2.url, caption: "V1 of the buyer personas presented in Google Slides" }],
       },
       {
         heading: "Reflections",
-        body: "Once adopted, it became clear people were using buyer personas as user personas. The people who buy Funnel aren't always the people who use it. That insight set up the next initiative — user personas built on top of this foundation.",
+        body: "Once adopted, it became clear people were using buyer personas as user personas. The people who buy Funnel aren't always the people who use it. That insight set up the next initiative: user personas built on top of this foundation.",
         images: [{ src: bp3.url, caption: "Internal presentation of the user personas" }],
       },
     ],
     outcome:
-      "Adopted across Product, Marketing and CS as the canonical customer model — referenced daily in roadmap, GTM and support conversations.",
+      "Adopted across Product, Marketing and CS as the canonical customer model, referenced daily in roadmap, GTM and support conversations.",
     metrics: [
       { value: "5", label: "Buyer personas shipped" },
       { value: "3", label: "Teams aligned" },
@@ -103,11 +103,11 @@ const studies: Record<string, CaseStudy> = {
     sections: [
       {
         heading: "Context",
-        body: "In Funnel, users manually upload data when an automated connection isn't available. To do that, they configure the dataset — fields, types, the shape of the data. That configuration is reused for every future upload.",
+        body: "In Funnel, users manually upload data when an automated connection isn't available. To do that, they configure the dataset: fields, types, the shape of the data. That configuration is reused for every future upload.",
       },
       {
         heading: "The challenge",
-        body: "Once set, the configuration couldn't be changed. Renaming a field or fixing a type meant deleting everything and starting over — or filing a support ticket so we could patch it from the backend. Painful and slow for the user; expensive for us.",
+        body: "Once set, the configuration couldn't be changed. Renaming a field or fixing a type meant deleting everything and starting over, or filing a support ticket so we could patch it from the backend. Painful and slow for the user; expensive for us.",
       },
       {
         heading: "The idea",
@@ -120,7 +120,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "The process",
-        body: "I reviewed historic support conversations, feature requests and system events to find the most-needed edit — adding and removing schema fields. I ran interviews with affected users to sharpen the problem and pulled developers in so they could feel the friction first-hand. We prototyped three approaches in Figma and tested them, picking the one that felt closest to the existing configuration setup. I spent a lot of time scenario-mapping in FigJam to nail how edits would behave across dataset states.",
+        body: "I reviewed historic support conversations, feature requests and system events to find the most-needed edit: adding and removing schema fields. I ran interviews with affected users to sharpen the problem and pulled developers in so they could feel the friction first-hand. We prototyped three approaches in Figma and tested them, picking the one that felt closest to the existing configuration setup. I spent a lot of time scenario-mapping in FigJam to nail how edits would behave across dataset states.",
         images: [
           { src: atc2.url, caption: "V2 prototypes in Figma for three different scenarios" },
           { src: atc1.url, caption: "Technical scenario mapping in FigJam" },
@@ -128,7 +128,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Launch & conclusions",
-        body: "We released carefully, with clear copy around which options were editable and which weren't. Inbound tickets on this surface dropped sharply, and users started experimenting with their datasets in ways they previously couldn't — which surfaced the next round of edits worth unlocking.",
+        body: "We released carefully, with clear copy around which options were editable and which weren't. Inbound tickets on this surface dropped sharply, and users started experimenting with their datasets in ways they previously couldn't, which surfaced the next round of edits worth unlocking.",
       },
     ],
     outcome:
@@ -145,7 +145,7 @@ const studies: Record<string, CaseStudy> = {
     tag: "Information architecture",
     title: "A simplified connection process",
     subtitle:
-      "Untangling a page that tried to be a setup flow, an overview, and a workspace — without splintering the experience.",
+      "Untangling a page that tried to be a setup flow, an overview, and a workspace, without splintering the experience.",
     image: caseIA.url,
     imageCaption: "V1 prototype in Figma",
     meta: [
@@ -155,7 +155,7 @@ const studies: Record<string, CaseStudy> = {
     sections: [
       {
         heading: "The challenge",
-        body: "Funnel's file import feature made users hop between several similar pages to complete a single goal. The same pages morphed depending on the phase, and two pages — owned by different teams — displayed the same things. The whole flow was incredibly complicated.",
+        body: "Funnel's file import feature made users hop between several similar pages to complete a single goal. The same pages morphed depending on the phase, and two pages, owned by different teams, displayed the same things. The whole flow was incredibly complicated.",
       },
       {
         heading: "The idea",
@@ -172,7 +172,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Launch & conclusions",
-        body: "The first slice landed with an immediate, measurable drop in clicks and session time. By the time the full initiative shipped, the experience had been transformed — completion rate up, support tickets down, abandoned sessions down. We even got unsolicited positive feedback from customers.",
+        body: "The first slice landed with an immediate, measurable drop in clicks and session time. By the time the full initiative shipped, the experience had been transformed: completion rate up, support tickets down, abandoned sessions down. We even got unsolicited positive feedback from customers.",
       },
       {
         heading: "Reflections",
@@ -180,7 +180,7 @@ const studies: Record<string, CaseStudy> = {
       },
     ],
     outcome:
-      "Dramatic reduction in clicks and session time, higher completion rate, fewer abandoned sessions — and unsolicited customer praise.",
+      "Dramatic reduction in clicks and session time, higher completion rate, fewer abandoned sessions, plus unsolicited customer praise.",
     metrics: [
       { value: "↓↓", label: "Clicks & session time" },
       { value: "+", label: "Completion rate" },
@@ -203,7 +203,7 @@ const studies: Record<string, CaseStudy> = {
     sections: [
       {
         heading: "The challenge",
-        body: "Funnel's Integration Engineering team builds custom connectors when the core offering and self-service tools fall short. Demand kept growing, but a huge slice of their time was being spent on simple, repetitive requests — not the trickier cases that actually needed them.",
+        body: "Funnel's Integration Engineering team builds custom connectors when the core offering and self-service tools fall short. Demand kept growing, but a huge slice of their time was being spent on simple, repetitive requests, not the trickier cases that actually needed them.",
         images: [{ src: ioe1.url, caption: "Funnel's Integration Engineering team at Camp Funnel, Barcelona 2022" }],
       },
       {
@@ -212,7 +212,7 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "The scope",
-        body: "Focus first on the request patterns that dominated the queue — the boring 80%. Ship the self-serve flow, measure the deflection, then expand.",
+        body: "Focus first on the request patterns that dominated the queue, the boring 80%. Ship the self-serve flow, measure the deflection, then expand.",
       },
       {
         heading: "The process",
@@ -241,7 +241,7 @@ const studies: Record<string, CaseStudy> = {
     tag: "Cross-team · Discovery",
     title: "Breaking the guess-and-check loop",
     subtitle:
-      "A cross-team hack-day initiative that let users preview the fields and data they'd get from a source — before committing to a connection.",
+      "A cross-team hack-day initiative that let users preview the fields and data they'd get from a source, before committing to a connection.",
     image: fpHero.url,
     imageCaption: "The field & data preview design in Figma",
     meta: [
@@ -251,11 +251,11 @@ const studies: Record<string, CaseStudy> = {
     sections: [
       {
         heading: "The challenge",
-        body: "Users found it difficult to understand what they'd actually get when connecting a new data source. They didn't know which fields a given configuration would produce, or what the underlying data would look like — so the standard workflow was: connect a source, check the Data Explorer, reconfigure, repeat. A slow, frustrating guess-and-check loop that also drove avoidable support load.",
+        body: "Users found it difficult to understand what they'd actually get when connecting a new data source. They didn't know which fields a given configuration would produce, or what the underlying data would look like, so the standard workflow was: connect a source, check the Data Explorer, reconfigure, repeat. A slow, frustrating guess-and-check loop that also drove avoidable support load.",
       },
       {
         heading: "The idea",
-        body: "Break — or drastically shorten — that loop by surfacing a preview inside the connect flow itself. Two candidate approaches: a live data preview using the current configuration, and a searchable field listing based on that configuration.",
+        body: "Break, or at least drastically shorten, that loop by surfacing a preview inside the connect flow itself. Two candidate approaches: a live data preview using the current configuration, and a searchable field listing based on that configuration.",
       },
       {
         heading: "Research",
@@ -263,17 +263,17 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Preparations",
-        body: "Before hacking, we reviewed the research together, walked through the prototypes and mapped pros and cons for each problem space — quota concerns, per-connector effort, backend readiness — so the split into two focused teams was grounded in trade-offs, not guesses.",
+        body: "Before hacking, we reviewed the research together, walked through the prototypes and mapped pros and cons for each problem space (quota concerns, per-connector effort, backend readiness) so the split into two focused teams was grounded in trade-offs, not guesses.",
         images: [{ src: fpPrep.url, caption: "Mapping pros and cons for field listing vs. data preview" }],
       },
       {
-        heading: "Group 1 — Data preview",
+        heading: "Group 1: Data preview",
         body: "We tested with Instagram Insights: a limited download entry point returned a live sample directly to a new preview step between configuration and connect, complete with pretty field names pulled from the connector schema.",
         images: [{ src: fpPoc.url, caption: "First stab at the in-flow data preview" }],
       },
       {
-        heading: "Group 2 — Field listing",
-        body: "Inspired by our Google Analytics field picker, we explored a full field picker for Google Ads — technically possible, but custom fields, attribution windows and filters made it too heavy for the time-box. We pivoted to a simple, configuration-driven field list that shipped the same insight with a fraction of the complexity.",
+        heading: "Group 2: Field listing",
+        body: "Inspired by our Google Analytics field picker, we explored a full field picker for Google Ads. Technically possible, but custom fields, attribution windows and filters made it too heavy for the time-box. We pivoted to a simple, configuration-driven field list that shipped the same insight with a fraction of the complexity.",
       },
       {
         heading: "Launch & conclusions",
@@ -281,11 +281,11 @@ const studies: Record<string, CaseStudy> = {
       },
       {
         heading: "Reflections",
-        body: "After reviewing user sessions in FullStory, it was clear that field listing and data previews aren't competing solutions — users flick between them. We decided to update the order to fields first and the data preview second, as this best suited the user's mental model.",
+        body: "After reviewing user sessions in FullStory, it was clear that field listing and data previews aren't competing solutions; users flick between them. We decided to update the order to fields first and the data preview second, as this best suited the user's mental model.",
       },
     ],
     outcome:
-      "A reusable preview framework live across three connectors and rolling out to the rest — turning a guess-and-check loop into a confident, one-shot connection.",
+      "A reusable preview framework live across three connectors and rolling out to the rest, turning a guess-and-check loop into a confident, one-shot connection.",
     metrics: [
       { value: "3", label: "Connectors live at launch" },
       { value: "-80%", label: "Reduction in support tickets" },
@@ -312,9 +312,9 @@ export const Route = createFileRoute("/case/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.title} — Ross Barrett` },
+          { title: `${loaderData.title} | Ross Barrett` },
           { name: "description", content: loaderData.subtitle },
-          { property: "og:title", content: `${loaderData.title} — Ross Barrett` },
+          { property: "og:title", content: `${loaderData.title} | Ross Barrett` },
           { property: "og:description", content: loaderData.subtitle },
           { property: "og:image", content: loaderData.image },
         ]
