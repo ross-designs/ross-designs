@@ -171,7 +171,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
-            <p className="max-w-2xl text-lg text-pretty text-muted-foreground md:text-xl">
+            <p className="max-w-3xl text-xl text-pretty leading-snug text-muted-foreground md:text-2xl lg:text-3xl">
               I'm <span className="text-foreground">Ross Barrett</span>, a senior product designer with over a decade of experience crafting intuitive, user-centered digital solutions. My expertise lies at the intersection of complex systems and human behavior, with a strong interest in optimising workflows with AI.
             </p>
         </div>
