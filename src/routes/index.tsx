@@ -99,7 +99,7 @@ const cases = [
 ];
 
 const experience = [
-  { years: "2021 to Now", role: "Product Designer", company: "Funnel AB" },
+  { years: "2021 TO 2026", role: "Product Designer", company: "Funnel AB" },
   { years: "2018 to 2021", role: "Product Marketing Manager", company: "Funnel AB" },
   { years: "2015 to 2022", role: "Product Manager / CSM", company: "Qwaya (Funnel AB)" },
   { years: "2015 to 2018", role: "CSM / Product Specialist", company: "Funnel AB" },
