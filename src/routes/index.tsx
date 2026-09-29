@@ -477,9 +477,6 @@ function ContactImpl() {
         }}
       />
       <div className="mx-auto max-w-5xl px-6 py-32 text-center md:py-44">
-        <div className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Let's talk
-        </div>
         <h2 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl">
           Hiring for a senior<br />
           design role?<br />
