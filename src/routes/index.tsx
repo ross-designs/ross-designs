@@ -216,9 +216,6 @@ function Work() {
             Work that moved<br />the needle.
           </h2>
         </div>
-        <div className="hidden text-right text-sm text-muted-foreground md:block">
-          Five studies from<br />Funnel AB · 2021–2026
-        </div>
       </div>
 
       <div className="space-y-24 md:space-y-32">
