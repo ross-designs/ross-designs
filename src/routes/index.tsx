@@ -240,10 +240,7 @@ function Work() {
               </div>
             </div>
             <div className="md:col-span-5">
-              <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground">
-                <span className="uppercase tracking-widest">{c.tag}</span>
-              </div>
-              <h3 className="mt-5 font-display text-3xl md:text-4xl leading-tight tracking-tight text-balance">
+              <h3 className="font-display text-3xl md:text-4xl leading-tight tracking-tight text-balance">
                 {c.title}
               </h3>
               <p className="mt-5 text-base text-muted-foreground text-pretty">{c.blurb}</p>
