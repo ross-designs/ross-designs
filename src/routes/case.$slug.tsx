@@ -388,11 +388,6 @@ function CaseStudyPage() {
             }}
           />
           <div className="mx-auto max-w-5xl px-6 pt-32 pb-16 md:pt-44 md:pb-24">
-            <div className="flex items-center gap-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-              <span className="text-primary">{study.n}</span>
-              <span className="h-px w-8 bg-border" />
-              <span>{study.tag}</span>
-            </div>
             <h1 className="mt-6 font-display text-5xl leading-[1] tracking-tight text-balance md:text-7xl">
               {study.title}
             </h1>
