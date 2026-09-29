@@ -369,9 +369,6 @@ function GallerySection() {
     <section id="gallery" className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-28 md:py-36">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Gallery
-          </div>
           <h2 className="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">
             A closer look at the product.
           </h2>
