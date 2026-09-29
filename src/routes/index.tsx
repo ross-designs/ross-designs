@@ -192,12 +192,7 @@ function Metrics() {
   return (
     <section className="border-y border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="mb-12 flex items-baseline justify-between gap-6">
-          <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Outcomes, not outputs
-          </h2>
-          <span className="font-mono text-xs text-muted-foreground">/ 06</span>
-        </div>
+        <div className="mb-12" />
         <div className="grid gap-px overflow-hidden rounded-xl bg-border md:grid-cols-3">
           {metrics.map((m) => (
             <div key={m.label} className="bg-background p-8 transition-colors hover:bg-card">
