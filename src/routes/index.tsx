@@ -212,9 +212,6 @@ function Work() {
     <section id="work" className="mx-auto max-w-7xl px-6 py-28 md:py-36">
       <div className="mb-16 flex items-end justify-between gap-6">
         <div>
-          <div className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Selected case studies
-          </div>
           <h2 className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight">
             Work that moved<br />the needle.
           </h2>
