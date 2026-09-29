@@ -241,8 +241,6 @@ function Work() {
             </div>
             <div className="md:col-span-5">
               <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground">
-                <span className="text-primary">{c.n}</span>
-                <span className="h-px w-8 bg-border" />
                 <span className="uppercase tracking-widest">{c.tag}</span>
               </div>
               <h3 className="mt-5 font-display text-3xl md:text-4xl leading-tight tracking-tight text-balance">
