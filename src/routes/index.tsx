@@ -63,7 +63,7 @@ const cases = [
     title: "Designing personas that aligned an entire product org",
     blurb:
       "Built Funnel's customer personas from qualitative and quantitative research, giving three product lines a shared language for who they were building for.",
-    outcome: "A shared view of Funnel's buyers and users across Product, Marketing, Sales and CS",
+    outcome: "A shared view of Funnel's buyers and users across Product, Marketing, Sales and CS.",
     href: "/case/personas",
   },
   {
