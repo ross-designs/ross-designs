@@ -53,7 +53,7 @@ const cases = [
     title: "Breaking the guess-and-check loop for data connections",
     blurb:
       "Ran a cross-team hack-day to let users preview the fields and data they'd get from a source before connecting, replacing a slow connect-check-reconfigure loop with confidence up front.",
-    outcome: "Reusable preview framework live across three connectors, rolling out to the rest.",
+    outcome: "-80% reduction in support tickets and a reusable preview framework for developers.",
     href: "/case/field-preview",
   },
   {
