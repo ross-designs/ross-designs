@@ -416,6 +416,8 @@ function GallerySection() {
                   src={g.img}
                   alt={g.title}
                   loading="lazy"
+                  width={1513}
+                  height={965}
                   className="w-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]"
                 />
               </button>
