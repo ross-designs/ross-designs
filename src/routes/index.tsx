@@ -504,10 +504,6 @@ function ContactImpl() {
           design role?<br />
           <em className="text-primary not-italic">I'd love to hear about it.</em>
         </h2>
-        <p className="mx-auto mt-8 max-w-xl text-lg text-muted-foreground">
-          Open to senior and lead Product Designer roles in Stockholm or remote-friendly
-          European teams.
-        </p>
         <div className="mt-12 flex flex-wrap justify-center gap-4">
           <a
             href="https://www.linkedin.com/in/ross-designs/"
