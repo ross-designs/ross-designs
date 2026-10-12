@@ -1,22 +1,22 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import casePersonas from "@/assets/pic02.jpg.asset.json";
-import caseFlexibility from "@/assets/pic03.jpg.asset.json";
-import caseIA from "@/assets/pic04.jpg.asset.json";
-import caseAutomation from "@/assets/pic05.jpg.asset.json";
-import bp1 from "@/assets/bp1.png.asset.json";
-import bp2 from "@/assets/bp2.png.asset.json";
-import bp3 from "@/assets/bp3.png.asset.json";
-import atc1 from "@/assets/atc1.png.asset.json";
-import atc2 from "@/assets/atc2.png.asset.json";
-import atc3 from "@/assets/atc3.png.asset.json";
-import scp1 from "@/assets/scp1.png.asset.json";
-import ioe1 from "@/assets/ioe1.jpeg.asset.json";
-import ioe2 from "@/assets/ioe2.png.asset.json";
-import ioe3 from "@/assets/ioe3.png.asset.json";
-import fpHero from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
-import fpPrep from "@/assets/fp_prep_whiteboard.png.asset.json";
-import fpPoc from "@/assets/First_stab_at_the_in-flow_data_preview.png.asset.json";
+import casePersonas from "@/assets/pic02.jpg";
+import caseFlexibility from "@/assets/pic03.jpg";
+import caseIA from "@/assets/pic04.jpg";
+import caseAutomation from "@/assets/pic05.jpg";
+import bp1 from "@/assets/bp1.png";
+import bp2 from "@/assets/bp2.png";
+import bp3 from "@/assets/bp3.png";
+import atc1 from "@/assets/atc1.png";
+import atc2 from "@/assets/atc2.png";
+import atc3 from "@/assets/atc3.png";
+import scp1 from "@/assets/scp1.png";
+import ioe1 from "@/assets/ioe1.jpeg";
+import ioe2 from "@/assets/ioe2.png";
+import ioe3 from "@/assets/ioe3.png";
+import fpHero from "@/assets/Facebook_Ads_-_Data_Preview-2.png";
+import fpPrep from "@/assets/fp_prep_whiteboard.png";
+import fpPoc from "@/assets/First_stab_at_the_in-flow_data_preview.png";
 
 type SectionImage = { src: string; caption?: string };
 type Section = { heading: string; body: string; images?: SectionImage[] };
@@ -44,7 +44,7 @@ const studies: Record<string, CaseStudy> = {
     title: "Who uses Funnel?",
     subtitle:
       "Building empathy and a shared customer model for marketing, sales, product and CS through buyer personas.",
-    image: casePersonas.url,
+    image: casePersonas,
     imageCaption: "Reference cards for the buyer personas",
     meta: [
       { label: "Role", value: "Lead designer & researcher" },
@@ -66,17 +66,17 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "The process",
         body: "I started by collecting internal preconceptions through interviews and workshops with sales teams across our global offices, then aligned with marketing and sales stakeholders on the questions we needed to answer: what challenge are customers trying to solve, what's the buying context, what would they use instead. From there I ran qualitative interviews with recently converted customers and mined the CRM for quantitative signal.",
-        images: [{ src: bp1.url, caption: "Our slightly chaotic workspace in Miro" }],
+        images: [{ src: bp1, caption: "Our slightly chaotic workspace in Miro" }],
       },
       {
         heading: "Launch & conclusions",
         body: "Five distinct buyer personas. We marketed them internally with printed cards, posters, presentations and company meeting slots, and they became the canonical customer model across product, marketing and CS, referenced in workshops, daily conversations and roadmap decisions.",
-        images: [{ src: bp2.url, caption: "V1 of the buyer personas presented in Google Slides" }],
+        images: [{ src: bp2, caption: "V1 of the buyer personas presented in Google Slides" }],
       },
       {
         heading: "Reflections",
         body: "Once adopted, it became clear people were using buyer personas as user personas. The people who buy Funnel aren't always the people who use it. That insight set up the next initiative: user personas built on top of this foundation.",
-        images: [{ src: bp3.url, caption: "Internal presentation of the user personas" }],
+        images: [{ src: bp3, caption: "Internal presentation of the user personas" }],
       },
     ],
     outcome:
@@ -94,7 +94,7 @@ const studies: Record<string, CaseStudy> = {
     title: "Adapting to change",
     subtitle:
       "Replacing destructive edits with a flexible data model so users could evolve their setup without starting over.",
-    image: caseFlexibility.url,
+    image: caseFlexibility,
     imageCaption: "Our workspace in FigJam",
     meta: [
       { label: "Role", value: "Product designer" },
@@ -116,14 +116,14 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "The scope",
         body: "Making everything editable in one go meant a long development cycle while customers kept struggling. We chose to ship one editable option first and learn.",
-        images: [{ src: atc3.url, caption: "The manual data upload configuration in Funnel" }],
+        images: [{ src: atc3, caption: "The manual data upload configuration in Funnel" }],
       },
       {
         heading: "The process",
         body: "I reviewed historic support conversations, feature requests and system events to find the most-needed edit: adding and removing schema fields. I ran interviews with affected users to sharpen the problem and pulled developers in so they could feel the friction first-hand. We prototyped three approaches in Figma and tested them, picking the one that felt closest to the existing configuration setup. I spent a lot of time scenario-mapping in FigJam to nail how edits would behave across dataset states.",
         images: [
-          { src: atc2.url, caption: "V2 prototypes in Figma for three different scenarios" },
-          { src: atc1.url, caption: "Technical scenario mapping in FigJam" },
+          { src: atc2, caption: "V2 prototypes in Figma for three different scenarios" },
+          { src: atc1, caption: "Technical scenario mapping in FigJam" },
         ],
       },
       {
@@ -146,7 +146,7 @@ const studies: Record<string, CaseStudy> = {
     title: "A simplified connection process",
     subtitle:
       "Untangling a page that tried to be a setup flow, an overview, and a workspace, without splintering the experience.",
-    image: caseIA.url,
+    image: caseIA,
     imageCaption: "V1 prototype in Figma",
     meta: [
       { label: "Role", value: "Lead designer" },
@@ -168,7 +168,7 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "The process",
         body: "I walked through Funnel screen by screen, capturing hundreds of screenshots to ground the user journeys I drew up. Then I deconstructed the feature, built a prototype of the target state, and user-tested it against the existing flow to surface more friction. I sliced the design into independent GitHub issues and kept the engineering team close throughout so we shipped with shared conviction.",
-        images: [{ src: scp1.url, caption: "My workspace in FigJam" }],
+        images: [{ src: scp1, caption: "My workspace in FigJam" }],
       },
       {
         heading: "Launch & conclusions",
@@ -194,7 +194,7 @@ const studies: Record<string, CaseStudy> = {
     title: "Increasing operational efficiency",
     subtitle:
       "Letting Integration Engineering focus on the hard problems by giving customers a self-serve path through the long tail.",
-    image: caseAutomation.url,
+    image: caseAutomation,
     imageCaption: "Funnel's file import section",
     meta: [
       { label: "Role", value: "Product designer" },
@@ -204,7 +204,7 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "The challenge",
         body: "Funnel's Integration Engineering team builds custom connectors when the core offering and self-service tools fall short. Demand kept growing, but a huge slice of their time was being spent on simple, repetitive requests, not the trickier cases that actually needed them.",
-        images: [{ src: ioe1.url, caption: "Funnel's Integration Engineering team at Camp Funnel, Barcelona 2022" }],
+        images: [{ src: ioe1, caption: "Funnel's Integration Engineering team at Camp Funnel, Barcelona 2022" }],
       },
       {
         heading: "The idea",
@@ -218,8 +218,8 @@ const studies: Record<string, CaseStudy> = {
         heading: "The process",
         body: "I sat with Integration Engineering to understand which request shapes were most common and where the existing UI was missing affordances. I prototyped a self-serve flow that mirrored the patterns they were already executing manually, then validated it with both customers and the engineers themselves before shipping.",
         images: [
-          { src: ioe2.url, caption: "Workshop in FigJam" },
-          { src: ioe3.url, caption: "Prototypes in Figma" },
+          { src: ioe2, caption: "Workshop in FigJam" },
+          { src: ioe3, caption: "Prototypes in Figma" },
         ],
       },
       {
@@ -242,7 +242,7 @@ const studies: Record<string, CaseStudy> = {
     title: "Breaking the guess-and-check loop",
     subtitle:
       "A cross-team hack-day initiative that let users preview the fields and data they'd get from a source, before committing to a connection.",
-    image: fpHero.url,
+    image: fpHero,
     imageCaption: "The field & data preview design in Figma",
     meta: [
       { label: "Role", value: "Lead designer" },
@@ -264,12 +264,12 @@ const studies: Record<string, CaseStudy> = {
       {
         heading: "Preparations",
         body: "Before hacking, we reviewed the research together, walked through the prototypes and mapped pros and cons for each problem space (quota concerns, per-connector effort, backend readiness) so the split into two focused teams was grounded in trade-offs, not guesses.",
-        images: [{ src: fpPrep.url, caption: "Mapping pros and cons for field listing vs. data preview" }],
+        images: [{ src: fpPrep, caption: "Mapping pros and cons for field listing vs. data preview" }],
       },
       {
         heading: "Group 1: Data preview",
         body: "We tested with Instagram Insights: a limited download entry point returned a live sample directly to a new preview step between configuration and connect, complete with pretty field names pulled from the connector schema.",
-        images: [{ src: fpPoc.url, caption: "First stab at the in-flow data preview" }],
+        images: [{ src: fpPoc, caption: "First stab at the in-flow data preview" }],
       },
       {
         heading: "Group 2: Field listing",

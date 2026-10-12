@@ -4,17 +4,17 @@ import casePersonas from "@/assets/case-personas.jpg";
 import caseFlexibility from "@/assets/case-flexibility.jpg";
 import caseIA from "@/assets/case-ia.jpg";
 import caseAutomation from "@/assets/case-automation.jpg";
-import caseFieldPreview from "@/assets/Facebook_Ads_-_Data_Preview-2.png.asset.json";
-import rossProfile from "@/assets/ross-profile.jpg.asset.json";
-import galleryDataSources from "@/assets/Data_Sources_-_Overview.png.asset.json";
-import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-3.png.asset.json";
-import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-3.png.asset.json";
-import galleryFbAccounts from "@/assets/Facebook_Ads_-_Accounts.png.asset.json";
-import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview-2.png.asset.json";
-import galleryFileTransport from "@/assets/File_Import_-_Transport_Type.png.asset.json";
-import galleryFileUpload from "@/assets/File_Import_-_Upload.png.asset.json";
-import galleryFileConfigure from "@/assets/File_Import_-_Configure.png.asset.json";
-import gallerySheets from "@/assets/Google_Sheets_-_Connect.png.asset.json";
+import caseFieldPreview from "@/assets/Facebook_Ads_-_Data_Preview-2.png";
+import rossProfile from "@/assets/ross-profile.jpg";
+import galleryDataSources from "@/assets/Data_Sources_-_Overview.png";
+import galleryGoogleAdsConn from "@/assets/Google_Ads_-_Connect-3.png";
+import galleryGoogleAdsConfig from "@/assets/Google_Ads_-_Configure-3.png";
+import galleryFbAccounts from "@/assets/Facebook_Ads_-_Accounts.png";
+import galleryFbPreview from "@/assets/Facebook_Ads_-_Field_Preview-2.png";
+import galleryFileTransport from "@/assets/File_Import_-_Transport_Type.png";
+import galleryFileUpload from "@/assets/File_Import_-_Upload.png";
+import galleryFileConfigure from "@/assets/File_Import_-_Configure.png";
+import gallerySheets from "@/assets/Google_Sheets_-_Connect.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,7 +48,7 @@ const metrics = [
 const cases = [
   {
     n: "01",
-    img: caseFieldPreview.url,
+    img: caseFieldPreview,
     tag: "Cross-team · Discovery",
     title: "Breaking the guess-and-check loop for data connections",
     blurb:
@@ -106,15 +106,15 @@ const experience = [
 ];
 
 const gallery = [
-  { img: galleryDataSources.url, title: "Data Sources · Overview", caption: "The central hub where users manage every connected data source." },
-  { img: galleryGoogleAdsConn.url, title: "Google Ads · Authenticate", caption: "Streamlined credential selection in the connection flow." },
-  { img: galleryGoogleAdsConfig.url, title: "Google Ads · Configure", caption: "Guided configuration with contextual help built in." },
-  { img: galleryFbAccounts.url, title: "Facebook Ads · Select accounts", caption: "Clear account selection with search, bulk actions, and premium upgrades in-context." },
-  { img: galleryFbPreview.url, title: "Facebook Ads · Field preview", caption: "Confirmation step with a full preview of what will sync." },
-  { img: galleryFileTransport.url, title: "File Import · Transport type", caption: "Choose how files reach Funnel: manual, email, or webhook, all from a single step." },
-  { img: galleryFileUpload.url, title: "File Import · Upload", caption: "A calm empty state that guides users to their first successful upload." },
-  { img: galleryFileConfigure.url, title: "File Import · Configure", caption: "Spreadsheet-style mapping that turns raw files into usable data." },
-  { img: gallerySheets.url, title: "Google Sheets · Select", caption: "Instant data preview to validate the sheet before connecting." },
+  { img: galleryDataSources, title: "Data Sources · Overview", caption: "The central hub where users manage every connected data source." },
+  { img: galleryGoogleAdsConn, title: "Google Ads · Authenticate", caption: "Streamlined credential selection in the connection flow." },
+  { img: galleryGoogleAdsConfig, title: "Google Ads · Configure", caption: "Guided configuration with contextual help built in." },
+  { img: galleryFbAccounts, title: "Facebook Ads · Select accounts", caption: "Clear account selection with search, bulk actions, and premium upgrades in-context." },
+  { img: galleryFbPreview, title: "Facebook Ads · Field preview", caption: "Confirmation step with a full preview of what will sync." },
+  { img: galleryFileTransport, title: "File Import · Transport type", caption: "Choose how files reach Funnel: manual, email, or webhook, all from a single step." },
+  { img: galleryFileUpload, title: "File Import · Upload", caption: "A calm empty state that guides users to their first successful upload." },
+  { img: galleryFileConfigure, title: "File Import · Configure", caption: "Spreadsheet-style mapping that turns raw files into usable data." },
+  { img: gallerySheets, title: "Google Sheets · Select", caption: "Instant data preview to validate the sheet before connecting." },
 ];
 
 function Index() {
@@ -184,7 +184,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="reveal mb-10 flex justify-center lg:hidden">
           <img
-            src={rossProfile.url}
+            src={rossProfile}
             alt="Ross Barrett"
             className="h-40 w-40 rounded-full object-cover object-[75%_35%] shadow-xl sm:h-48 sm:w-48"
           />
@@ -197,7 +197,7 @@ function Hero() {
         </div>
           <div className="reveal hidden lg:flex lg:items-center lg:justify-center lg:-ml-12">
             <img
-              src={rossProfile.url}
+              src={rossProfile}
               alt="Ross Barrett"
               className="h-72 w-72 rounded-full object-cover object-[75%_35%] shadow-xl"
             />
