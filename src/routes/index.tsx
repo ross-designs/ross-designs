@@ -134,9 +134,22 @@ function Index() {
 }
 
 function Nav() {
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = navRef.current;
+    if (!el) return;
+    const setHeight = () =>
+      document.documentElement.style.setProperty("--nav-h", `${el.offsetHeight}px`);
+    setHeight();
+    const ro = new ResizeObserver(setHeight);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   return (
     <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-background/70 border-b border-border/60">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div ref={navRef} className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-2xl tracking-tight">
           Ross Designs Tech<span className="text-primary">.</span>
         </a>
@@ -161,7 +174,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32 grain">
+    <section id="top" className="relative overflow-hidden pt-[calc(var(--nav-h,4.5rem)+2.5rem)] pb-24 md:pt-44 md:pb-32 grain">
       <div
         className="absolute inset-0 -z-10 opacity-40"
         style={{
