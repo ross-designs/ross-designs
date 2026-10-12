@@ -515,7 +515,7 @@ function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-7xl items-center justify-center px-6 py-8 text-sm text-muted-foreground">
-        <div>© {new Date().getFullYear()} Ross Barrett.</div>
+        <div>© {new Date().getFullYear()} Ross Designs Tech.</div>
       </div>
     </footer>
   );
