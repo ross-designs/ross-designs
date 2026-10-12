@@ -9,6 +9,8 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
+    // Static hosts (GitHub Pages) serve /case/x/ for /case/x/index.html; don't redirect it.
+    trailingSlash: "preserve",
     defaultPreloadStaleTime: 0,
   });
 
