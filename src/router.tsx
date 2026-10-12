@@ -9,7 +9,7 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
-    // Static hosts (GitHub Pages) serve /case/x/ for /case/x/index.html; don't redirect it.
+    // Static hosts (GitHub Pages) serve folder/index.html at /path/; "always" matches that and lets prerender render every route.
     trailingSlash: "always",
     defaultPreloadStaleTime: 0,
   });
