@@ -19,8 +19,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
-      - run: find dist -maxdepth 3 | head -60
+      - run: find .output/public -maxdepth 2 \( -name "*.html" -o -name CNAME \) | head -30
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/client
+          path: .output/public
       - uses: actions/deploy-pages@v4
