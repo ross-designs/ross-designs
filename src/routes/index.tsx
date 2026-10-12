@@ -500,7 +500,7 @@ function ContactImpl() {
           backgroundImage: `radial-gradient(ellipse at center, oklch(0.78 0.16 55 / 0.25), transparent 65%)`,
         }}
       />
-      <div className="mx-auto max-w-5xl px-6 pt-14 pb-28 text-center md:pt-16 md:pb-36">
+      <div className="mx-auto max-w-5xl px-6 pt-14 pb-12 text-center md:pt-16 md:pb-16">
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[0.95] tracking-tight">
           Hiring for a senior<br />
           design role?<br />
