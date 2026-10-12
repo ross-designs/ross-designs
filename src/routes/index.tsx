@@ -493,7 +493,7 @@ function GallerySection() {
 
 function ContactImpl() {
   return (
-    <section id="contact" className="relative flex min-h-svh scroll-mt-[var(--nav-h,4.5rem)] flex-col justify-center overflow-hidden border-t border-border">
+    <section id="contact" className="relative min-h-svh scroll-mt-[var(--nav-h,4.5rem)] overflow-hidden border-t border-border">
       <div
         className="absolute inset-0 -z-10 opacity-50"
         style={{
