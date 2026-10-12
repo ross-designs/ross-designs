@@ -490,7 +490,7 @@ function CaseStudyPage() {
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 py-12 md:grid-cols-2">
             {study.prev ? (
               <Link
-                to="/case/$slug"
+                to="/case/$slug/"
                 params={{ slug: study.prev.slug }}
                 className="group rounded-xl border border-border bg-background p-6 transition-colors hover:bg-card"
               >
@@ -504,7 +504,7 @@ function CaseStudyPage() {
             ) : <div />}
             {study.next ? (
               <Link
-                to="/case/$slug"
+                to="/case/$slug/"
                 params={{ slug: study.next.slug }}
                 className="group rounded-xl border border-border bg-background p-6 text-right transition-colors hover:bg-card"
               >

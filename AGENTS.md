@@ -1,0 +1,2 @@
+- Every route is prerendered to static HTML (list in vite.config.ts `pages`) and deployed from dist/client to GitHub Pages; add new routes/case slugs there. Why: Pages has no server runtime.
+- Router uses trailingSlash "always": static hosts serve /path/ and prerender otherwise hits redirect loops.
