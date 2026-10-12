@@ -337,7 +337,7 @@ function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-7xl px-6 py-28 md:py-36">
       <div className="mb-16">
-        <h2 className="font-display text-5xl md:text-6xl tracking-tight">
+        <h2 className="font-display text-4xl sm:text-5xl md:text-6xl tracking-tight">
           A decade of compounding context.
         </h2>
       </div>
