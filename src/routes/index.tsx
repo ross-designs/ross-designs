@@ -191,8 +191,10 @@ function Hero() {
 function Metrics() {
   return (
     <section className="border-y border-border bg-card/40">
-      <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="mb-12" />
+      <div className="mx-auto max-w-7xl px-6 py-28 md:py-32">
+        <div className="mb-16">
+          <h2 className="font-display text-5xl md:text-6xl tracking-tight">Achievements</h2>
+        </div>
         <div className="grid gap-px overflow-hidden rounded-xl bg-border md:grid-cols-3">
           {metrics.map((m) => (
             <div key={m.label} className="bg-background p-8 transition-colors hover:bg-card">
