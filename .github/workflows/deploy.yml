@@ -19,7 +19,7 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
-      - run: cp dist/client/index.html dist/client/404.html && touch dist/client/.nojekyll
+      - run: find dist -maxdepth 3 | head -60
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
