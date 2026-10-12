@@ -510,19 +510,19 @@ function ContactImpl() {
         </p>
         <div className="mt-12 flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:r_barrett1@hotmail.com"
-            className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
-          >
-            Email
-            <span>→</span>
-          </a>
-          <a
             href="https://www.linkedin.com/in/ross-designs/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-border px-8 py-4 text-base font-medium hover:bg-card transition-colors"
           >
             LinkedIn
+          </a>
+          <a
+            href="mailto:r_barrett1@hotmail.com"
+            className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+          >
+            Email
+            <span>→</span>
           </a>
         </div>
         <div className="mt-10 font-mono text-sm text-muted-foreground">
