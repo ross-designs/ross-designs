@@ -493,14 +493,14 @@ function GallerySection() {
 
 function ContactImpl() {
   return (
-    <section id="contact" className="relative flex min-h-svh scroll-mt-[var(--nav-h,4.5rem)] items-center overflow-hidden border-t border-border">
+    <section id="contact" className="relative scroll-mt-[var(--nav-h,4.5rem)] overflow-hidden border-t border-border">
       <div
         className="absolute inset-0 -z-10 opacity-50"
         style={{
           backgroundImage: `radial-gradient(ellipse at center, oklch(0.78 0.16 55 / 0.25), transparent 65%)`,
         }}
       />
-      <div className="mx-auto max-w-5xl px-6 py-32 text-center md:py-44">
+      <div className="mx-auto max-w-5xl px-6 pt-24 pb-28 text-center md:pt-32 md:pb-36">
         <h2 className="font-display text-balance text-6xl leading-[0.95] tracking-tight md:text-8xl">
           Hiring for a senior<br />
           design role?<br />
