@@ -169,6 +169,13 @@ function Hero() {
         }}
       />
       <div className="mx-auto max-w-7xl px-6">
+        <div className="reveal mb-10 flex justify-center lg:hidden">
+          <img
+            src={rossProfile.url}
+            alt="Ross Barrett"
+            className="h-40 w-40 rounded-full object-cover object-[75%_35%] shadow-xl sm:h-48 sm:w-48"
+          />
+        </div>
         <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="reveal max-w-5xl">
             <p className="max-w-3xl text-xl text-pretty leading-snug text-muted-foreground md:text-2xl lg:text-3xl">
