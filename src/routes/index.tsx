@@ -289,7 +289,7 @@ function About() {
     <section id="about" className="relative overflow-hidden border-y border-border bg-card/40">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 py-28 md:grid-cols-12 md:py-36">
         <div className="md:col-span-4">
-          <h2 className="font-display text-5xl leading-none tracking-tight">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-none tracking-tight">
             A designer<br />who's lived<br />on every<br />
             <em className="text-primary not-italic">side of the product.</em>
           </h2>
