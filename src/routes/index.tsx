@@ -416,6 +416,8 @@ function GallerySection() {
                   src={g.img}
                   alt={g.title}
                   loading="lazy"
+                  width={1513}
+                  height={965}
                   className="w-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]"
                 />
               </button>
@@ -491,7 +493,7 @@ function GallerySection() {
 
 function ContactImpl() {
   return (
-    <section id="contact" className="relative overflow-hidden border-t border-border">
+    <section id="contact" className="relative flex min-h-svh scroll-mt-[var(--nav-h,4.5rem)] items-center overflow-hidden border-t border-border">
       <div
         className="absolute inset-0 -z-10 opacity-50"
         style={{
