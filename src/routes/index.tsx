@@ -138,7 +138,7 @@ function Nav() {
     <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-2xl tracking-tight">
-          Ross Barrett<span className="text-primary">.</span>
+          Ross Designs Tech<span className="text-primary">.</span>
         </a>
         <nav className="hidden gap-8 text-sm text-muted-foreground md:flex">
           <a href="#work" className="hover:text-foreground transition-colors">Work</a>
