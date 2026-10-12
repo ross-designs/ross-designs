@@ -213,7 +213,7 @@ function Metrics() {
     <section className="border-y border-border bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-28 md:py-32">
         <div className="mb-16">
-          <h2 className="font-display text-5xl md:text-6xl tracking-tight">Achievements</h2>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl tracking-tight">Achievements</h2>
         </div>
         <div className="grid gap-px overflow-hidden rounded-xl bg-border md:grid-cols-3">
           {metrics.map((m) => (
@@ -337,7 +337,7 @@ function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-7xl px-6 py-28 md:py-36">
       <div className="mb-16">
-        <h2 className="font-display text-5xl md:text-6xl tracking-tight">
+        <h2 className="font-display text-4xl sm:text-5xl md:text-6xl tracking-tight">
           A decade of compounding context.
         </h2>
       </div>
